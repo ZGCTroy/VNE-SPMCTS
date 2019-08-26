@@ -1,0 +1,809 @@
+Starting Test...
+Initialising...
+Starting CloudSim version 3.0
+Datacenter_0 is starting...
+broker1 is starting...
+Entities started.
+0.0: broker1: Cloud Resource List received with 1 resource(s)
+At time: 0--- Process VNs: 0;1;2;3;4;5;
+0-当前接受的虚拟网络数为-0;1;2;3;4;5;-total fitness is:-384.101-total cost is-180.60098-benifit-cost ratio is:-0.47019136-Node Utilization rate is:-0.061876535-历史接受率为：-1.0-链路资源利用率为：-0.14135516
+At time: 50--- Process VNs: 6;7;8;9;10;
+50-当前接受的虚拟网络数为-6;7;8;9;10;-total fitness is:-652.40204-total cost is-309.902-benifit-cost ratio is:-0.47501692-Node Utilization rate is:-0.113126576-历史接受率为：-1.0-链路资源利用率为：-0.24182242
+At time: 100--- Process VNs: 11;12;13;14;
+100-当前接受的虚拟网络数为-11;12;13;14;-total fitness is:-982.703-total cost is-442.203-benifit-cost ratio is:-0.44998643-Node Utilization rate is:-0.15656406-历史接受率为：-1.0-链路资源利用率为：-0.38084114
+At time: 150--- Process VNs: 15;16;17;18;
+150-当前接受的虚拟网络数为-15;-total fitness is:-982.704-total cost is-442.204-benifit-cost ratio is:-0.449987-Node Utilization rate is:-0.15656406-历史接受率为：-0.8-链路资源利用率为：-0.38084114
+At time: 200--- Process VNs: 19;20;21;22;23;24;
+200-当前接受的虚拟网络数为-19;21;23;24;-total fitness is:-1059.6049-total cost is-486.605-benifit-cost ratio is:-0.4592325-Node Utilization rate is:-0.18531406-历史接受率为：-0.75-链路资源利用率为：-0.40700936
+At time: 250--- Process VNs: 25;26;27;28;29;
+250-当前接受的虚拟网络数为-25;26;29;-total fitness is:-1145.8059-total cost is-529.306-benifit-cost ratio is:-0.46195087-Node Utilization rate is:-0.20593905-历史接受率为：-0.7083333-链路资源利用率为：-0.43901867
+At time: 300--- Process VNs: 30;31;32;33;34;
+300-当前接受的虚拟网络数为-30;31;32;34;-total fitness is:-1253.8069-total cost is-580.807-benifit-cost ratio is:-0.4632348-Node Utilization rate is:-0.21031404-历史接受率为：-0.71428573-链路资源利用率为：-0.442757
+At time: 349--- Process VNs: 35;36;37;38;39;
+349-当前接受的虚拟网络数为-35;36;38;-total fitness is:-1374.7079-total cost is-630.70795-benifit-cost ratio is:-0.45879415-Node Utilization rate is:-0.23125154-历史接受率为：-0.6875-链路资源利用率为：-0.4869159
+At time: 399--- Process VNs: 40;41;42;43;44;45;
+399-当前接受的虚拟网络数为-40;41;43;-total fitness is:-1483.809-total cost is-674.8089-benifit-cost ratio is:-0.45478153-Node Utilization rate is:-0.23750156-历史接受率为：-0.6486486-链路资源利用率为：-0.51401865
+At time: 448--- Process VNs: 46;47;48;49;50;
+448-当前接受的虚拟网络数为-46;47;48;50;-total fitness is:-1541.21-total cost is-707.20984-benifit-cost ratio is:-0.45886666-Node Utilization rate is:-0.24218905-历史接受率为：-0.6585366-链路资源利用率为：-0.4864486
+At time: 498--- Process VNs: 51;52;53;54;55;
+498-当前接受的虚拟网络数为-51;52;54;-total fitness is:-1574.3109-total cost is-731.8108-benifit-cost ratio is:-0.46484515-Node Utilization rate is:-0.25875157-历史接受率为：-0.64444447-链路资源利用率为：-0.4969626
+At time: 547--- Process VNs: 56;57;58;59;60;61;
+547-当前接受的虚拟网络数为-56;61;-total fitness is:-1595.7119-total cost is-743.7118-benifit-cost ratio is:-0.46606895-Node Utilization rate is:-0.25656408-历史接受率为：-0.6-链路资源利用率为：-0.4964953
+At time: 597--- Process VNs: 62;63;64;65;66;
+597-当前接受的虚拟网络数为-62;63;64;65;-total fitness is:-1675.7129-total cost is-791.2127-benifit-cost ratio is:-0.47216484-Node Utilization rate is:-0.25187653-历史接受率为：-0.6111111-链路资源利用率为：-0.46495324
+At time: 647--- Process VNs: 67;68;69;70;71;
+647-当前接受的虚拟网络数为-67;69;-total fitness is:-1717.0139-total cost is-811.5137-benifit-cost ratio is:-0.4726308-Node Utilization rate is:-0.25593907-历史接受率为：-0.5862069-链路资源利用率为：-0.47710282
+At time: 696--- Process VNs: 72;73;74;75;
+696-当前接受的虚拟网络数为-72;73;-total fitness is:-1848.0149-total cost is-868.51465-benifit-cost ratio is:-0.4699717-Node Utilization rate is:-0.26125157-历史接受率为：-0.57377046-链路资源利用率为：-0.49766356
+At time: 746--- Process VNs: 76;77;78;79;80;81;
+746-当前接受的虚拟网络数为-76;77;78;79;-total fitness is:-2019.9158-total cost is-941.91565-benifit-cost ratio is:-0.46631432-Node Utilization rate is:-0.2646891-历史接受率为：-0.57575756-链路资源利用率为：-0.47850466
+At time: 796--- Process VNs: 82;83;84;85;86;
+796-当前接受的虚拟网络数为-82;83;84;86;-total fitness is:-2176.4165-total cost is-1012.9166-benifit-cost ratio is:-0.4654057-Node Utilization rate is:-0.27031404-历史接受率为：-0.5857143-链路资源利用率为：-0.4630841
+At time: 846--- Process VNs: 87;88;89;90;91;
+846-当前接受的虚拟网络数为-87;89;91;-total fitness is:-2275.6174-total cost is-1060.1177-benifit-cost ratio is:-0.46585935-Node Utilization rate is:-0.26343906-历史接受率为：-0.5810811-链路资源利用率为：-0.47313082
+At time: 896--- Process VNs: 92;93;94;95;
+896-当前接受的虚拟网络数为-92;93;-total fitness is:-2318.2185-total cost is-1078.2186-benifit-cost ratio is:-0.46510655-Node Utilization rate is:-0.2515641-历史接受率为：-0.5714286-链路资源利用率为：-0.4609813
+At time: 945--- Process VNs: 96;97;98;99;100;101;
+945-当前接受的虚拟网络数为-96;99;100;-total fitness is:-2347.7195-total cost is-1099.2196-benifit-cost ratio is:-0.4682074-Node Utilization rate is:-0.25875157-历史接受率为：-0.5609756-链路资源利用率为：-0.46214956
+At time: 995--- Process VNs: 102;103;104;105;106;107;
+995-当前接受的虚拟网络数为-102;103;105;-total fitness is:-2425.4204-total cost is-1140.9207-benifit-cost ratio is:-0.4704012-Node Utilization rate is:-0.28250158-历史接受率为：-0.55172414-链路资源利用率为：-0.49135512
+At time: 1044--- Process VNs: 108;109;110;111;112;
+1044-当前接受的虚拟网络数为-108;109;110;112;-total fitness is:-2521.7214-total cost is-1189.2216-benifit-cost ratio is:-0.47159117-Node Utilization rate is:-0.30875158-历史接受率为：-0.5604396-链路资源利用率为：-0.5257009
+At time: 1094--- Process VNs: 113;114;115;116;117;
+1094-当前接受的虚拟网络数为-113;114;-total fitness is:-2614.6223-total cost is-1225.6226-benifit-cost ratio is:-0.468757-Node Utilization rate is:-0.29718906-历史接受率为：-0.5473684-链路资源利用率为：-0.48411214
+At time: 1143--- Process VNs: 118;119;120;121;122;123;
+1143-当前接受的虚拟网络数为-118;119;121;122;-total fitness is:-2683.5232-total cost is-1269.0234-benifit-cost ratio is:-0.47289452-Node Utilization rate is:-0.26625156-历史接受率为：-0.55-链路资源利用率为：-0.36471963
+At time: 1192--- Process VNs: 124;125;126;127;128;129;
+1192-当前接受的虚拟网络数为-124;126;127;129;-total fitness is:-2980.924-total cost is-1386.9244-benifit-cost ratio is:-0.46526662-Node Utilization rate is:-0.27437657-历史接受率为：-0.552381-链路资源利用率为：-0.44719625
+At time: 1242--- Process VNs: 130;131;132;133;134;
+1242-当前接受的虚拟网络数为-130;131;133;134;-total fitness is:-3041.325-total cost is-1426.3254-benifit-cost ratio is:-0.4689816-Node Utilization rate is:-0.27937657-历史接受率为：-0.559633-链路资源利用率为：-0.43691587
+At time: 1291--- Process VNs: 135;136;137;138;139;
+1291-当前接受的虚拟网络数为-135;136;138;-total fitness is:-3092.326-total cost is-1454.8264-benifit-cost ratio is:-0.47046348-Node Utilization rate is:-0.29500157-历史接受率为：-0.5575221-链路资源利用率为：-0.45560747
+At time: 1341--- Process VNs: 140;141;142;143;144;
+1341-当前接受的虚拟网络数为-140;144;-total fitness is:-3101.7268-total cost is-1464.2274-benifit-cost ratio is:-0.47206846-Node Utilization rate is:-0.2568766-历史接受率为：-0.5470086-链路资源利用率为：-0.4088785
+At time: 1390--- Process VNs: 145;146;147;148;149;
+1390-当前接受的虚拟网络数为-145;146;148;-total fitness is:-3169.7278-total cost is-1504.7284-benifit-cost ratio is:-0.47471848-Node Utilization rate is:-0.26750153-历史接受率为：-0.54545456-链路资源利用率为：-0.43294394
+At time: 1440--- Process VNs: 150;151;152;153;154;155;
+1440-当前接受的虚拟网络数为-150;151;152;153;154;-total fitness is:-3343.3289-total cost is-1599.8293-benifit-cost ratio is:-0.4785139-Node Utilization rate is:-0.26093906-历史接受率为：-0.5555556-链路资源利用率为：-0.43808413
+At time: 1489--- Process VNs: 156;157;158;159;160;
+1489-当前接受的虚拟网络数为-156;157;158;-total fitness is:-3388.93-total cost is-1635.4303-benifit-cost ratio is:-0.48258016-Node Utilization rate is:-0.25218904-历史接受率为：-0.5538462-链路资源利用率为：-0.39906543
+At time: 1539--- Process VNs: 161;162;163;164;165;
+1539-当前接受的虚拟网络数为-161;164;-total fitness is:-3420.531-total cost is-1652.5312-benifit-cost ratio is:-0.48312125-Node Utilization rate is:-0.24468905-历史接受率为：-0.54477614-链路资源利用率为：-0.38317758
+At time: 1588--- Process VNs: 166;167;168;169;
+1588-当前接受的虚拟网络数为-166;168;169;-total fitness is:-3466.6318-total cost is-1684.6322-benifit-cost ratio is:-0.4859565-Node Utilization rate is:-0.25593907-历史接受率为：-0.54744524-链路资源利用率为：-0.39649534
+At time: 1637--- Process VNs: 170;171;172;173;174;175;
+1637-当前接受的虚拟网络数为-170;172;-total fitness is:-3484.0327-total cost is-1700.0332-benifit-cost ratio is:-0.48794985-Node Utilization rate is:-0.25375158-历史接受率为：-0.53521127-链路资源利用率为：-0.36799067
+At time: 1686--- Process VNs: 176;177;178;179;
+1686-当前接受的虚拟网络数为-176;178;179;-total fitness is:-3623.8335-total cost is-1756.8342-benifit-cost ratio is:-0.48479992-Node Utilization rate is:-0.27062654-历史接受率为：-0.537931-链路资源利用率为：-0.42336446
+At time: 1735--- Process VNs: 180;181;182;183;184;185;
+1735-当前接受的虚拟网络数为-180;181;183;184;185;-total fitness is:-3716.0347-total cost is-1812.5353-benifit-cost ratio is:-0.4877606-Node Utilization rate is:-0.28750157-历史接受率为：-0.5466667-链路资源利用率为：-0.42943925
+At time: 1785--- Process VNs: 186;187;188;189;190;191;
+1785-当前接受的虚拟网络数为-186;189;190;-total fitness is:-3809.2356-total cost is-1854.7362-benifit-cost ratio is:-0.4869051-Node Utilization rate is:-0.2778141-历史接受率为：-0.5419355-链路资源利用率为：-0.4469626
+At time: 1834--- Process VNs: 192;193;194;195;196;
+1834-当前接受的虚拟网络数为-192;193;195;-total fitness is:-3922.6365-total cost is-1897.6372-benifit-cost ratio is:-0.48376575-Node Utilization rate is:-0.27625155-历史接受率为：-0.5408805-链路资源利用率为：-0.45280373
+At time: 1883--- Process VNs: 197;198;199;200;201;202;
+1883-当前接受的虚拟网络数为-197;198;199;200;202;-total fitness is:-4151.137-total cost is-1995.6383-benifit-cost ratio is:-0.48074496-Node Utilization rate is:-0.30656403-历史接受率为：-0.5487805-链路资源利用率为：-0.52242994
+At time: 1933--- Process VNs: 203;204;205;206;207;208;
+1933-当前接受的虚拟网络数为-203;207;-total fitness is:-4168.438-total cost is-2006.9393-benifit-cost ratio is:-0.48146075-Node Utilization rate is:-0.29968905-历史接受率为：-0.53846157-链路资源利用率为：-0.50537384
+At time: 1982--- Process VNs: 209;210;211;212;
+1982-当前接受的虚拟网络数为-209;210;211;-total fitness is:-4229.2393-total cost is-2038.7402-benifit-cost ratio is:-0.48205838-Node Utilization rate is:-0.28156406-历史接受率为：-0.5406977-链路资源利用率为：-0.47710282
+At time: 2031--- Process VNs: 213;214;215;216;217;218;
+2031-当前接受的虚拟网络数为-213;215;216;218;-total fitness is:-4328.24-total cost is-2091.7415-benifit-cost ratio is:-0.4832776-Node Utilization rate is:-0.30031407-历史接受率为：-0.5423729-链路资源利用率为：-0.48411214
+At time: 2081--- Process VNs: 219;220;221;222;
+2081-当前接受的虚拟网络数为-219;220;-total fitness is:-4374.4414-total cost is-2112.4424-benifit-cost ratio is:-0.48290563-Node Utilization rate is:-0.30531406-历史接受率为：-0.5388889-链路资源利用率为：-0.47546726
+At time: 2130--- Process VNs: 223;224;225;226;227;228;
+2130-当前接受的虚拟网络数为-223;224;227;-total fitness is:-4448.0425-total cost is-2150.5435-benifit-cost ratio is:-0.48348087-Node Utilization rate is:-0.31312656-历史接受率为：-0.53513515-链路资源利用率为：-0.49322432
+At time: 2180--- Process VNs: 229;230;231;232;
+2180-当前接受的虚拟网络数为-229;230;-total fitness is:-4496.6436-total cost is-2180.1445-benifit-cost ratio is:-0.4848382-Node Utilization rate is:-0.29031408-历史接受率为：-0.5319149-链路资源利用率为：-0.43691587
+At time: 2229--- Process VNs: 233;234;235;236;
+2229-当前接受的虚拟网络数为-233;234;-total fitness is:-4512.2446-total cost is-2191.7456-benifit-cost ratio is:-0.48573288-Node Utilization rate is:-0.25625157-历史接受率为：-0.52879584-链路资源利用率为：-0.36588782
+At time: 2279--- Process VNs: 237;238;239;240;241;242;
+2279-当前接受的虚拟网络数为-237;239;241;-total fitness is:-4644.9453-total cost is-2248.9465-benifit-cost ratio is:-0.48417073-Node Utilization rate is:-0.27468908-历史接受率为：-0.5255102-链路资源利用率为：-0.41588783
+At time: 2328--- Process VNs: 243;244;245;246;
+2328-当前接受的虚拟网络数为-243;244;245;246;-total fitness is:-4753.9463-total cost is-2304.4475-benifit-cost ratio is:-0.48474413-Node Utilization rate is:-0.3012516-历史接受率为：-0.53266335-链路资源利用率为：-0.45887852
+At time: 2378--- Process VNs: 247;248;249;250;
+2378-当前接受的虚拟网络数为-247;248;-total fitness is:-4857.1475-total cost is-2329.6484-benifit-cost ratio is:-0.47963303-Node Utilization rate is:-0.28312653-历史接受率为：-0.52970296-链路资源利用率为：-0.44135517
+At time: 2428--- Process VNs: 251;252;253;254;255;256;
+2428-当前接受的虚拟网络数为-251;256;-total fitness is:-4938.948-total cost is-2360.9495-benifit-cost ratio is:-0.47802678-Node Utilization rate is:-0.2700016-历史接受率为：-0.5217391-链路资源利用率为：-0.41962618
+At time: 2477--- Process VNs: 257;258;259;260;261;
+2477-当前接受的虚拟网络数为-257;258;259;261;-total fitness is:-4979.6494-total cost is-2393.1504-benifit-cost ratio is:-0.4805861-Node Utilization rate is:-0.27468908-历史接受率为：-0.52606636-链路资源利用率为：-0.4135514
+At time: 2527--- Process VNs: 262;263;264;265;266;267;
+2527-当前接受的虚拟网络数为-262;263;265;266;-total fitness is:-5101.8506-total cost is-2447.3513-benifit-cost ratio is:-0.47969875-Node Utilization rate is:-0.27156407-历史接受率为：-0.5277778-链路资源利用率为：-0.42570096
+At time: 2577--- Process VNs: 268;269;270;271;
+2577-当前接受的虚拟网络数为-268;269;-total fitness is:-5166.1514-total cost is-2483.6523-benifit-cost ratio is:-0.48075485-Node Utilization rate is:-0.2646891-历史接受率为：-0.5251142-链路资源利用率为：-0.4271028
+At time: 2626--- Process VNs: 272;273;274;275;276;277;
+2626-当前接受的虚拟网络数为-272;274;277;-total fitness is:-5255.1523-total cost is-2525.6533-benifit-cost ratio is:-0.48060516-Node Utilization rate is:-0.25406408-历史接受率为：-0.5223214-链路资源利用率为：-0.42056078
+At time: 2676--- Process VNs: 278;279;280;281;
+2676-当前接受的虚拟网络数为-278;281;-total fitness is:-5438.8535-total cost is-2587.8542-benifit-cost ratio is:-0.47580877-Node Utilization rate is:-0.21718907-历史接受率为：-0.5198238-链路资源利用率为：-0.38668227
+At time: 2725--- Process VNs: 282;283;284;285;286;
+2725-当前接受的虚拟网络数为-282;283;284;285;-total fitness is:-5702.9546-total cost is-2691.955-benifit-cost ratio is:-0.47202814-Node Utilization rate is:-0.24375159-历史接受率为：-0.52380955-链路资源利用率为：-0.4661215
+At time: 2774--- Process VNs: 287;288;289;290;291;292;
+2774-当前接受的虚拟网络数为-287;291;-total fitness is:-5722.0557-total cost is-2706.0562-benifit-cost ratio is:-0.47291678-Node Utilization rate is:-0.23968905-历史接受率为：-0.5169492-链路资源利用率为：-0.45747662
+At time: 2824--- Process VNs: 293;294;295;296;
+2824-当前接受的虚拟网络数为-293;-total fitness is:-5722.0566-total cost is-2706.0571-benifit-cost ratio is:-0.47291687-Node Utilization rate is:-0.23968905-历史接受率为：-0.51046026-链路资源利用率为：-0.45747662
+At time: 2873--- Process VNs: 297;298;299;300;
+2873-当前接受的虚拟网络数为-297;298;-total fitness is:-5756.1577-total cost is-2722.6582-benifit-cost ratio is:-0.47299924-Node Utilization rate is:-0.22187656-历史接受率为：-0.5082645-链路资源利用率为：-0.42032713
+At time: 2923--- Process VNs: 301;302;303;304;
+2923-当前接受的虚拟网络数为-301;302;303;-total fitness is:-5855.1587-total cost is-2767.1592-benifit-cost ratio is:-0.47260192-Node Utilization rate is:-0.20875156-历史接受率为：-0.5102041-链路资源利用率为：-0.43107474
+At time: 2972--- Process VNs: 305;306;307;308;
+2972-当前接受的虚拟网络数为-305;306;307;308;-total fitness is:-5919.9595-total cost is-2809.9602-benifit-cost ratio is:-0.4746587-Node Utilization rate is:-0.20906407-历史接受率为：-0.516129-链路资源利用率为：-0.38481307
+At time: 3022--- Process VNs: 309;310;311;312;
+3022-当前接受的虚拟网络数为-309;310;-total fitness is:-5962.0605-total cost is-2833.5613-benifit-cost ratio is:-0.47526544-Node Utilization rate is:-0.18187654-历史接受率为：-0.5139442-链路资源利用率为：-0.35000002
+At time: 3071--- Process VNs: 313;314;315;316;317;
+3071-当前接受的虚拟网络数为-313;314;315;316;-total fitness is:-6164.0615-total cost is-2924.562-benifit-cost ratio is:-0.47445375-Node Utilization rate is:-0.18437654-历史接受率为：-0.5176471-链路资源利用率为：-0.33060747
+At time: 3120--- Process VNs: 318;319;320;321;
+3120-当前接受的虚拟网络数为-318;319;320;321;-total fitness is:-6329.2627-total cost is-2994.763-benifit-cost ratio is:-0.47316143-Node Utilization rate is:-0.19312656-历史接受率为：-0.5232558-链路资源利用率为：-0.34485984
+At time: 3169--- Process VNs: 322;323;324;325;
+3169-当前接受的虚拟网络数为-322;323;325;-total fitness is:-6464.2637-total cost is-3055.764-benifit-cost ratio is:-0.47271648-Node Utilization rate is:-0.20125157-历史接受率为：-0.5249042-链路资源利用率为：-0.32056075
+At time: 3218--- Process VNs: 326;327;328;329;
+3218-当前接受的虚拟网络数为-326;329;-total fitness is:-6561.7646-total cost is-3092.765-benifit-cost ratio is:-0.47133127-Node Utilization rate is:-0.20218909-历史接受率为：-0.52272725-链路资源利用率为：-0.3385514
+At time: 3268--- Process VNs: 330;331;332;333;
+3268-当前接受的虚拟网络数为-330;331;333;-total fitness is:-6612.8657-total cost is-3125.8657-benifit-cost ratio is:-0.47269458-Node Utilization rate is:-0.22187656-历史接受率为：-0.52434456-链路资源利用率为：-0.35654205
+At time: 3317--- Process VNs: 334;335;336;337;
+3317-当前接受的虚拟网络数为-334;335;336;-total fitness is:-6652.767-total cost is-3154.2666-benifit-cost ratio is:-0.4741285-Node Utilization rate is:-0.23812658-历史接受率为：-0.52592593-链路资源利用率为：-0.37032712
+At time: 3366--- Process VNs: 338;339;340;341;342;
+3366-当前接受的虚拟网络数为-338;339;342;-total fitness is:-6719.668-total cost is-3193.6677-benifit-cost ratio is:-0.47527164-Node Utilization rate is:-0.25562656-历史接受率为：-0.52554744-链路资源利用率为：-0.3890187
+At time: 3416--- Process VNs: 343;344;345;346;347;348;
+3416-当前接受的虚拟网络数为-343;345;346;-total fitness is:-6764.969-total cost is-3223.4688-benifit-cost ratio is:-0.47649422-Node Utilization rate is:-0.24062657-历史接受率为：-0.5232975-链路资源利用率为：-0.3740654
+At time: 3466--- Process VNs: 349;350;351;352;
+3466-当前接受的虚拟网络数为-349;350;-total fitness is:-6839.87-total cost is-3255.8696-benifit-cost ratio is:-0.47601336-Node Utilization rate is:-0.24406403-历史接受率为：-0.5212766-链路资源利用率为：-0.3871495
+At time: 3516--- Process VNs: 353;354;355;356;
+3516-当前接受的虚拟网络数为-353;355;356;-total fitness is:-6976.6714-total cost is-3323.1707-benifit-cost ratio is:-0.4763261-Node Utilization rate is:-0.25218904-历史接受率为：-0.522807-链路资源利用率为：-0.42009348
+At time: 3565--- Process VNs: 357;358;359;360;
+3565-当前接受的虚拟网络数为-357;360;-total fitness is:-7000.7725-total cost is-3336.2717-benifit-cost ratio is:-0.47655767-Node Utilization rate is:-0.25000155-历史接受率为：-0.5208333-链路资源利用率为：-0.40443927
+At time: 3614--- Process VNs: 361;362;363;364;365;
+3614-当前接受的虚拟网络数为-361;362;-total fitness is:-7018.8735-total cost is-3348.3728-benifit-cost ratio is:-0.47705272-Node Utilization rate is:-0.21531409-历史接受率为：-0.5171233-链路资源利用率为：-0.35397196
+At time: 3664--- Process VNs: 366;367;368;369;370;
+3664-当前接受的虚拟网络数为-366;368;369;-total fitness is:-7058.7744-total cost is-3378.2737-benifit-cost ratio is:-0.4785921-Node Utilization rate is:-0.22312659-历史接受率为：-0.5168919-链路资源利用率为：-0.33200938
+At time: 3713--- Process VNs: 371;372;373;374;375;376;
+3713-当前接受的虚拟网络数为-371;372;373;374;375;-total fitness is:-7404.575-total cost is-3529.075-benifit-cost ratio is:-0.47660735-Node Utilization rate is:-0.23625153-历史接受率为：-0.5215947-链路资源利用率为：-0.40327102
+At time: 3762--- Process VNs: 377;378;379;380;381;382;
+3762-当前接受的虚拟网络数为-377;378;380;382;-total fitness is:-7513.3765-total cost is-3591.876-benifit-cost ratio is:-0.47806415-Node Utilization rate is:-0.22937655-历史接受率为：-0.52287585-链路资源利用率为：-0.38644862
+At time: 3811--- Process VNs: 383;384;385;386;387;
+3811-当前接受的虚拟网络数为-383;384;385;-total fitness is:-7684.9775-total cost is-3657.477-benifit-cost ratio is:-0.47592553-Node Utilization rate is:-0.23062658-历史接受率为：-0.5225806-链路资源利用率为：-0.43504673
+At time: 3861--- Process VNs: 388;389;390;391;
+3861-当前接受的虚拟网络数为-388;389;390;391;-total fitness is:-7730.0786-total cost is-3693.5781-benifit-cost ratio is:-0.47781897-Node Utilization rate is:-0.21406406-历史接受率为：-0.52715653-链路资源利用率为：-0.3728972
+At time: 3912--- Process VNs: 392;393;394;395;
+3912-当前接受的虚拟网络数为-392;393;-total fitness is:-7808.0796-total cost is-3732.079-benifit-cost ratio is:-0.47797656-Node Utilization rate is:-0.23281407-历史接受率为：-0.5253165-链路资源利用率为：-0.40186918
+At time: 3961--- Process VNs: 396;397;398;399;400;401;
+3961-当前接受的虚拟网络数为-396;398;-total fitness is:-7902.281-total cost is-3768.78-benifit-cost ratio is:-0.47692308-Node Utilization rate is:-0.23593909-历史接受率为：-0.52024925-链路资源利用率为：-0.42523366
+At time: 4011--- Process VNs: 402;403;404;405;406;
+4011-当前接受的虚拟网络数为-402;403;404;406;-total fitness is:-8116.5815-total cost is-3862.581-benifit-cost ratio is:-0.47588766-Node Utilization rate is:-0.25625157-历史接受率为：-0.52307695-链路资源利用率为：-0.44252336
+At time: 4060--- Process VNs: 407;408;409;410;411;
+4060-当前接受的虚拟网络数为-407;409;410;411;-total fitness is:-8205.582-total cost is-3911.082-benifit-cost ratio is:-0.47663677-Node Utilization rate is:-0.26250154-历史接受率为：-0.5258359-链路资源利用率为：-0.44252336
+At time: 4110--- Process VNs: 412;413;414;415;416;
+4110-当前接受的虚拟网络数为-412;413;415;416;-total fitness is:-8374.783-total cost is-3986.783-benifit-cost ratio is:-0.47604612-Node Utilization rate is:-0.27156407-历史接受率为：-0.5285285-链路资源利用率为：-0.47126168
+At time: 4160--- Process VNs: 417;418;419;420;421;422;
+4160-当前接受的虚拟网络数为-417;419;420;421;-total fitness is:-8433.385-total cost is-4023.8838-benifit-cost ratio is:-0.47713745-Node Utilization rate is:-0.29281408-历史接受率为：-0.5295858-链路资源利用率为：-0.49228972
+At time: 4209--- Process VNs: 423;424;425;426;427;
+4209-当前接受的虚拟网络数为-423;426;-total fitness is:-8473.786-total cost is-4037.2847-benifit-cost ratio is:-0.476444-Node Utilization rate is:-0.29968905-历史接受率为：-0.5263158-链路资源利用率为：-0.50677574
+At time: 4259--- Process VNs: 428;429;430;431;432;
+4259-当前接受的虚拟网络数为-428;-total fitness is:-8473.787-total cost is-4037.2856-benifit-cost ratio is:-0.47644407-Node Utilization rate is:-0.29968905-历史接受率为：-0.5202312-链路资源利用率为：-0.50677574
+At time: 4308--- Process VNs: 433;434;435;436;
+4308-当前接受的虚拟网络数为-433;436;-total fitness is:-8481.188-total cost is-4044.6865-benifit-cost ratio is:-0.4769009-Node Utilization rate is:-0.2803141-历史接受率为：-0.51862466-链路资源利用率为：-0.4817757
+At time: 4358--- Process VNs: 437;438;439;440;
+4358-当前接受的虚拟网络数为-437;438;439;-total fitness is:-8574.79-total cost is-4097.2876-benifit-cost ratio is:-0.4778295-Node Utilization rate is:-0.26000154-历史接受率为：-0.5198864-链路资源利用率为：-0.4109813
+At time: 4407--- Process VNs: 441;442;443;444;
+4407-当前接受的虚拟网络数为-441;442;443;444;-total fitness is:-8843.991-total cost is-4206.989-benifit-cost ratio is:-0.47568893-Node Utilization rate is:-0.28437656-历史接受率为：-0.52394366-链路资源利用率为：-0.5046729
+At time: 4457--- Process VNs: 445;446;447;448;449;450;
+4457-当前接受的虚拟网络数为-445;449;450;-total fitness is:-8915.392-total cost is-4241.3896-benifit-cost ratio is:-0.4757379-Node Utilization rate is:-0.29468906-历史接受率为：-0.5222222-链路资源利用率为：-0.52359813
+At time: 4506--- Process VNs: 451;452;453;454;
+4506-当前接受的虚拟网络数为-451;452;453;-total fitness is:-8959.192-total cost is-4266.6904-benifit-cost ratio is:-0.47623605-Node Utilization rate is:-0.28218907-历史接受率为：-0.523416-链路资源利用率为：-0.49228972
+At time: 4555--- Process VNs: 455;456;457;458;
+4555-当前接受的虚拟网络数为-455;456;457;-total fitness is:-9026.693-total cost is-4308.1914-benifit-cost ratio is:-0.4772724-Node Utilization rate is:-0.27406406-历史接受率为：-0.52459013-链路资源利用率为：-0.47289717
+At time: 4605--- Process VNs: 459;460;461;462;463;464;
+4605-当前接受的虚拟网络数为-459;460;462;463;464;-total fitness is:-9119.495-total cost is-4360.992-benifit-cost ratio is:-0.47820544-Node Utilization rate is:-0.27687657-历史接受率为：-0.5283019-链路资源利用率为：-0.4504673
+At time: 4654--- Process VNs: 465;466;467;468;469;
+4654-当前接受的虚拟网络数为-465;468;469;-total fitness is:-9138.196-total cost is-4377.693-benifit-cost ratio is:-0.47905436-Node Utilization rate is:-0.29125154-历史接受率为：-0.528-链路资源利用率为：-0.45490652
+At time: 4704--- Process VNs: 470;471;472;473;474;475;
+4704-当前接受的虚拟网络数为-470;473;474;-total fitness is:-9191.097-total cost is-4407.0938-benifit-cost ratio is:-0.47949597-Node Utilization rate is:-0.30593908-历史接受率为：-0.5263158-链路资源利用率为：-0.47523367
+At time: 4753--- Process VNs: 476;477;478;479;480;481;
+4753-当前接受的虚拟网络数为-476;479;480;-total fitness is:-9297.298-total cost is-4452.795-benifit-cost ratio is:-0.47893432-Node Utilization rate is:-0.30156404-历史接受率为：-0.5246753-链路资源利用率为：-0.48457944
+At time: 4802--- Process VNs: 482;483;484;485;486;
+4802-当前接受的虚拟网络数为-482;484;485;-total fitness is:-9362.6-total cost is-4488.0957-benifit-cost ratio is:-0.47936428-Node Utilization rate is:-0.30562657-历史接受率为：-0.5244216-链路资源利用率为：-0.47079438
+At time: 4852--- Process VNs: 487;488;489;490;491;492;
+4852-当前接受的虚拟网络数为-487;488;490;492;-total fitness is:-9449.7-total cost is-4534.197-benifit-cost ratio is:-0.4798244-Node Utilization rate is:-0.32625157-历史接受率为：-0.52538073-链路资源利用率为：-0.48668224
+At time: 4901--- Process VNs: 493;494;495;496;497;
+4901-当前接受的虚拟网络数为-493;494;495;-total fitness is:-9543.501-total cost is-4578.9976-benifit-cost ratio is:-0.4798027-Node Utilization rate is:-0.32843906-历史接受率为：-0.5251256-链路资源利用率为：-0.49579442
+At time: 4951--- Process VNs: 498;499;500;501;502;
+4951-当前接受的虚拟网络数为-498;499;502;-total fitness is:-9626.002-total cost is-4615.9985-benifit-cost ratio is:-0.47953436-Node Utilization rate is:-0.32375157-历史接受率为：-0.52487564-链路资源利用率为：-0.49509346
+At time: 5000--- Process VNs: 503;504;505;506;
+5000-当前接受的虚拟网络数为-503;-total fitness is:-9626.003-total cost is-4615.9995-benifit-cost ratio is:-0.4795344-Node Utilization rate is:-0.32000154-历史接受率为：-0.52098763-链路资源利用率为：-0.4801402
+At time: 5050--- Process VNs: 507;508;509;510;511;
+5050-当前接受的虚拟网络数为-507;508;511;-total fitness is:-9743.504-total cost is-4673.5005-benifit-cost ratio is:-0.47965297-Node Utilization rate is:-0.28343904-历史接受率为：-0.5207824-链路资源利用率为：-0.425
+At time: 5099--- Process VNs: 512;513;514;515;516;517;
+5099-当前接受的虚拟网络数为-512;513;514;516;517;-total fitness is:-9979.305-total cost is-4777.8013-benifit-cost ratio is:-0.47877097-Node Utilization rate is:-0.29187655-历史接受率为：-0.5241546-链路资源利用率为：-0.4661215
+At time: 5149--- Process VNs: 518;519;520;521;522;
+5149-当前接受的虚拟网络数为-518;519;520;-total fitness is:-10022.706-total cost is-4804.702-benifit-cost ratio is:-0.47938174-Node Utilization rate is:-0.29781407-历史接受率为：-0.52392346-链路资源利用率为：-0.47196263
+At time: 5199--- Process VNs: 523;524;525;526;527;528;
+5199-当前接受的虚拟网络数为-523;-total fitness is:-10022.707-total cost is-4804.703-benifit-cost ratio is:-0.47938177-Node Utilization rate is:-0.28312653-历史接受率为：-0.5177305-链路资源利用率为：-0.45957947
+At time: 5249--- Process VNs: 529;530;531;532;
+5249-当前接受的虚拟网络数为-529;-total fitness is:-10022.708-total cost is-4804.704-benifit-cost ratio is:-0.47938183-Node Utilization rate is:-0.2778141-历史接受率为：-0.5140845-链路资源利用率为：-0.45724297
+At time: 5298--- Process VNs: 533;534;535;536;
+5298-当前接受的虚拟网络数为-533;535;-total fitness is:-10103.409-total cost is-4837.4053-benifit-cost ratio is:-0.47878942-Node Utilization rate is:-0.27281404-历史接受率为：-0.51282054-链路资源利用率为：-0.4619159
+At time: 5348--- Process VNs: 537;538;539;540;541;
+5348-当前接受的虚拟网络数为-537;538;540;541;-total fitness is:-10227.71-total cost is-4894.706-benifit-cost ratio is:-0.47857302-Node Utilization rate is:-0.25125158-历史接受率为：-0.51501155-链路资源利用率为：-0.42570096
+At time: 5397--- Process VNs: 542;543;544;545;546;
+5397-当前接受的虚拟网络数为-542;545;546;-total fitness is:-10275.111-total cost is-4927.607-benifit-cost ratio is:-0.47956726-Node Utilization rate is:-0.25625157-历史接受率为：-0.51487416-链路资源利用率为：-0.41121495
+At time: 5447--- Process VNs: 547;548;549;550;551;
+5447-当前接受的虚拟网络数为-547;548;551;-total fitness is:-10438.8125-total cost is-4987.808-benifit-cost ratio is:-0.47781375-Node Utilization rate is:-0.2593766-历史接受率为：-0.5147392-链路资源利用率为：-0.4509346
+At time: 5497--- Process VNs: 552;553;554;555;556;557;
+5497-当前接受的虚拟网络数为-552;553;554;556;-total fitness is:-10562.414-total cost is-5058.9087-benifit-cost ratio is:-0.47895384-Node Utilization rate is:-0.26375157-历史接受率为：-0.5156951-链路资源利用率为：-0.4313084
+At time: 5547--- Process VNs: 558;559;560;561;562;
+5547-当前接受的虚拟网络数为-558;561;562;-total fitness is:-10611.415-total cost is-5088.4097-benifit-cost ratio is:-0.47952226-Node Utilization rate is:-0.26156408-历史接受率为：-0.51555556-链路资源利用率为：-0.41962618
+At time: 5596--- Process VNs: 563;564;565;566;
+5596-当前接受的虚拟网络数为-563;564;565;-total fitness is:-10662.816-total cost is-5117.3105-benifit-cost ratio is:-0.4799211-Node Utilization rate is:-0.27687657-历史接受率为：-0.51655626-链路资源利用率为：-0.42266357
+At time: 5647--- Process VNs: 567;568;569;570;571;572;
+5647-当前接受的虚拟网络数为-567;568;569;570;-total fitness is:-10788.218-total cost is-5187.7114-benifit-cost ratio is:-0.48086825-Node Utilization rate is:-0.26812655-历史接受率为：-0.51746726-链路资源利用率为：-0.41658878
+At time: 5696--- Process VNs: 573;574;575;576;577;
+5696-当前接受的虚拟网络数为-573;574;575;577;-total fitness is:-10893.219-total cost is-5243.2124-benifit-cost ratio is:-0.4813281-Node Utilization rate is:-0.28062654-历史接受率为：-0.5194805-链路资源利用率为：-0.43785048
+At time: 5745--- Process VNs: 578;579;580;581;582;583;
+5745-当前接受的虚拟网络数为-578;579;580;582;-total fitness is:-11128.319-total cost is-5333.8135-benifit-cost ratio is:-0.4793009-Node Utilization rate is:-0.29187655-历史接受率为：-0.5203426-链路资源利用率为：-0.47546726
+At time: 5795--- Process VNs: 584;585;586;587;588;589;
+5795-当前接受的虚拟网络数为-584;585;587;-total fitness is:-11208.72-total cost is-5371.2144-benifit-cost ratio is:-0.47919962-Node Utilization rate is:-0.2959391-历史接受率为：-0.5190678-链路资源利用率为：-0.47850466
+At time: 5845--- Process VNs: 590;591;592;593;594;
+5845-当前接受的虚拟网络数为-590;591;-total fitness is:-11268.621-total cost is-5398.115-benifit-cost ratio is:-0.47903955-Node Utilization rate is:-0.29125154-历史接受率为：-0.5168067-链路资源利用率为：-0.47079438
+At time: 5894--- Process VNs: 595;596;597;598;
+5894-当前接受的虚拟网络数为-595;596;598;-total fitness is:-11383.522-total cost is-5450.516-benifit-cost ratio is:-0.4788075-Node Utilization rate is:-0.28156406-历史接受率为：-0.5177453-链路资源利用率为：-0.47266352
+At time: 5944--- Process VNs: 599;600;601;602;603;604;
+5944-当前接受的虚拟网络数为-599;601;604;-total fitness is:-11435.323-total cost is-5483.317-benifit-cost ratio is:-0.47950694-Node Utilization rate is:-0.2671891-历史接受率为：-0.5165289-链路资源利用率为：-0.46285045
+At time: 5993--- Process VNs: 605;606;607;608;
+5993-当前接受的虚拟网络数为-605;607;-total fitness is:-11457.424-total cost is-5497.918-benifit-cost ratio is:-0.47985637-Node Utilization rate is:-0.27750158-历史接受率为：-0.5154004-链路资源利用率为：-0.47009343
+At time: 6043--- Process VNs: 609;610;611;612;
+6043-当前接受的虚拟网络数为-609;-total fitness is:-11457.425-total cost is-5497.919-benifit-cost ratio is:-0.47985643-Node Utilization rate is:-0.23968905-历史接受率为：-0.5122449-链路资源利用率为：-0.4079439
+At time: 6092--- Process VNs: 613;614;615;616;617;
+6092-当前接受的虚拟网络数为-613;615;617;-total fitness is:-11520.325-total cost is-5534.32-benifit-cost ratio is:-0.48039615-Node Utilization rate is:-0.24437654-历史接受率为：-0.51214576-链路资源利用率为：-0.41869158
+At time: 6142--- Process VNs: 618;619;620;621;
+6142-当前接受的虚拟网络数为-618;619;620;-total fitness is:-11618.126-total cost is-5583.121-benifit-cost ratio is:-0.48055264-Node Utilization rate is:-0.23062658-历史接受率为：-0.51307845-链路资源利用率为：-0.38037384
+At time: 6191--- Process VNs: 622;623;624;625;626;627;
+6191-当前接受的虚拟网络数为-622;623;625;627;-total fitness is:-11837.827-total cost is-5674.3223-benifit-cost ratio is:-0.47933817-Node Utilization rate is:-0.24781406-历史接受率为：-0.5139442-链路资源利用率为：-0.43668222
+At time: 6241--- Process VNs: 628;629;630;631;
+6241-当前接受的虚拟网络数为-628;629;-total fitness is:-11894.128-total cost is-5698.123-benifit-cost ratio is:-0.47907028-Node Utilization rate is:-0.26000154-历史接受率为：-0.51287127-链路资源利用率为：-0.45700938
+At time: 6291--- Process VNs: 632;633;634;635;
+6291-当前接受的虚拟网络数为-632;634;635;-total fitness is:-11973.729-total cost is-5736.724-benifit-cost ratio is:-0.47910926-Node Utilization rate is:-0.2568766-历史接受率为：-0.5137795-链路资源利用率为：-0.47102803
+At time: 6341--- Process VNs: 636;637;638;639;
+6341-当前接受的虚拟网络数为-636;637;638;-total fitness is:-12016.329-total cost is-5762.325-benifit-cost ratio is:-0.4795412-Node Utilization rate is:-0.26031405-历史接受率为：-0.5146771-链路资源利用率为：-0.4600467
+At time: 6390--- Process VNs: 640;641;642;643;644;645;
+6390-当前接受的虚拟网络数为-640;641;644;-total fitness is:-12131.2295-total cost is-5812.226-benifit-cost ratio is:-0.47911268-Node Utilization rate is:-0.25125158-历史接受率为：-0.5135659-链路资源利用率为：-0.43948597
+At time: 6440--- Process VNs: 646;647;648;649;650;651;
+6440-当前接受的虚拟网络数为-646;647;649;650;651;-total fitness is:-12275.631-total cost is-5881.6274-benifit-cost ratio is:-0.47913036-Node Utilization rate is:-0.2700016-历史接受率为：-0.5163148-链路资源利用率为：-0.48574764
+At time: 6490--- Process VNs: 652;653;654;655;656;657;
+6490-当前接受的虚拟网络数为-652;653;655;656;657;-total fitness is:-12509.433-total cost is-5983.4287-benifit-cost ratio is:-0.47831336-Node Utilization rate is:-0.28000158-历史接受率为：-0.5190114-链路资源利用率为：-0.50023365
+At time: 6539--- Process VNs: 658;659;660;661;662;663;
+6539-当前接受的虚拟网络数为-658;661;662;-total fitness is:-12623.334-total cost is-6026.8296-benifit-cost ratio is:-0.47743565-Node Utilization rate is:-0.28843904-历史接受率为：-0.51789075-链路资源利用率为：-0.5245327
+At time: 6589--- Process VNs: 664;665;666;667;
+6589-当前接受的虚拟网络数为-664;665;-total fitness is:-12683.935-total cost is-6054.4307-benifit-cost ratio is:-0.47733065-Node Utilization rate is:-0.28468907-历史接受率为：-0.5168539-链路资源利用率为：-0.53621495
+At time: 6638--- Process VNs: 668;669;670;671;672;
+6638-当前接受的虚拟网络数为-668;670;-total fitness is:-12714.936-total cost is-6066.9316-benifit-cost ratio is:-0.47715002-Node Utilization rate is:-0.25750154-历史接受率为：-0.51486987-链路资源利用率为：-0.50443923
+At time: 6688--- Process VNs: 673;674;675;676;
+6688-当前接受的虚拟网络数为-673;-total fitness is:-12714.937-total cost is-6066.9326-benifit-cost ratio is:-0.47715005-Node Utilization rate is:-0.22593904-历史接受率为：-0.5120148-链路资源利用率为：-0.43504673
+At time: 6737--- Process VNs: 677;678;679;680;681;682;
+6737-当前接受的虚拟网络数为-677;678;679;680;-total fitness is:-12891.4375-total cost is-6139.934-benifit-cost ratio is:-0.47628-Node Utilization rate is:-0.22312659-历史接受率为：-0.51282054-链路资源利用率为：-0.4504673
+At time: 6786--- Process VNs: 683;684;685;686;687;
+6786-当前接受的虚拟网络数为-683;686;687;-total fitness is:-12956.438-total cost is-6179.435-benifit-cost ratio is:-0.47693932-Node Utilization rate is:-0.21187657-历史接受率为：-0.51272726-链路资源利用率为：-0.41845793
+At time: 6836--- Process VNs: 688;689;690;691;
+6836-当前接受的虚拟网络数为-688;-total fitness is:-12956.439-total cost is-6179.436-benifit-cost ratio is:-0.47693938-Node Utilization rate is:-0.21187657-历史接受率为：-0.50994575-链路资源利用率为：-0.41845793
+At time: 6886--- Process VNs: 692;693;694;695;696;
+6886-当前接受的虚拟网络数为-692;693;694;695;-total fitness is:-13109.041-total cost is-6248.037-benifit-cost ratio is:-0.47662047-Node Utilization rate is:-0.21593904-历史接受率为：-0.51166964-链路资源利用率为：-0.41892523
+At time: 6935--- Process VNs: 697;698;699;700;701;702;
+6935-当前接受的虚拟网络数为-697;699;700;-total fitness is:-13270.042-total cost is-6317.538-benifit-cost ratio is:-0.4760752-Node Utilization rate is:-0.21250159-历史接受率为：-0.51067615-链路资源利用率为：-0.38411218
+At time: 6984--- Process VNs: 703;704;705;706;
+6984-当前接受的虚拟网络数为-703;704;-total fitness is:-13314.043-total cost is-6340.539-benifit-cost ratio is:-0.47622943-Node Utilization rate is:-0.22812659-历史接受率为：-0.5097345-链路资源利用率为：-0.39766353
+At time: 7034--- Process VNs: 707;708;709;710;
+7034-当前接受的虚拟网络数为-707;708;709;-total fitness is:-13453.645-total cost is-6385.64-benifit-cost ratio is:-0.47464016-Node Utilization rate is:-0.21687657-历史接受率为：-0.5105634-链路资源利用率为：-0.40046728
+At time: 7083--- Process VNs: 711;712;713;714;
+7083-当前接受的虚拟网络数为-711;712;713;714;-total fitness is:-13605.445-total cost is-6459.441-benifit-cost ratio is:-0.4747688-Node Utilization rate is:-0.22687656-历史接受率为：-0.51313484-链路资源利用率为：-0.43948597
+At time: 7133--- Process VNs: 715;716;717;718;
+7133-当前接受的虚拟网络数为-715;717;-total fitness is:-13644.646-total cost is-6483.642-benifit-cost ratio is:-0.47517845-Node Utilization rate is:-0.23156404-历史接受率为：-0.5121951-链路资源利用率为：-0.45023364
+At time: 7182--- Process VNs: 719;720;721;722;723;724;
+7182-当前接受的虚拟网络数为-719;720;721;-total fitness is:-13681.447-total cost is-6511.4434-benifit-cost ratio is:-0.47593236-Node Utilization rate is:-0.23406404-历史接受率为：-0.51122624-链路资源利用率为：-0.43761683
+At time: 7231--- Process VNs: 725;726;727;728;729;730;
+7231-当前接受的虚拟网络数为-725;726;728;729;-total fitness is:-13821.148-total cost is-6579.1445-benifit-cost ratio is:-0.4760201-Node Utilization rate is:-0.25843906-历史接受率为：-0.5119863-链路资源利用率为：-0.45397198
+At time: 7280--- Process VNs: 731;732;733;734;
+7280-当前接受的虚拟网络数为-731;732;-total fitness is:-13837.949-total cost is-6589.4453-benifit-cost ratio is:-0.47618654-Node Utilization rate is:-0.26750153-历史接受率为：-0.51107323-链路资源利用率为：-0.45911217
+At time: 7330--- Process VNs: 735;736;737;738;739;
+7330-当前接受的虚拟网络数为-735;-total fitness is:-13837.95-total cost is-6589.4463-benifit-cost ratio is:-0.47618657-Node Utilization rate is:-0.25562656-历史接受率为：-0.5076142-链路资源利用率为：-0.43341124
+At time: 7379--- Process VNs: 740;741;742;743;
+7379-当前接受的虚拟网络数为-740;742;743;-total fitness is:-13951.752-total cost is-6639.247-benifit-cost ratio is:-0.47587192-Node Utilization rate is:-0.22218907-历史接受率为：-0.5084175-链路资源利用率为：-0.38434577
+At time: 7429--- Process VNs: 744;745;746;747;748;749;
+7429-当前接受的虚拟网络数为-744;745;746;747;748;749;-total fitness is:-14210.952-total cost is-6763.448-benifit-cost ratio is:-0.4759321-Node Utilization rate is:-0.25468904-历史接受率为：-0.51252085-链路资源利用率为：-0.41378504
+At time: 7478--- Process VNs: 750;751;752;753;754;755;
+7478-当前接受的虚拟网络数为-750;751;752;-total fitness is:-14225.553-total cost is-6778.0493-benifit-cost ratio is:-0.47647002-Node Utilization rate is:-0.23437655-历史接受率为：-0.5115894-链路资源利用率为：-0.37873834
+At time: 7528--- Process VNs: 756;757;758;759;760;761;
+7528-当前接受的虚拟网络数为-756;757;759;760;-total fitness is:-14340.454-total cost is-6834.95-benifit-cost ratio is:-0.4766202-Node Utilization rate is:-0.25406408-历史接受率为：-0.5123153-链路资源利用率为：-0.4109813
+At time: 7577--- Process VNs: 762;763;764;765;766;
+7577-当前接受的虚拟网络数为-762;763;764;-total fitness is:-14413.555-total cost is-6874.551-benifit-cost ratio is:-0.4769504-Node Utilization rate is:-0.24187654-历史接受率为：-0.5122349-链路资源利用率为：-0.36799067
+At time: 7627--- Process VNs: 767;768;769;770;771;772;
+7627-当前接受的虚拟网络数为-767;768;-total fitness is:-14460.056-total cost is-6900.052-benifit-cost ratio is:-0.47718015-Node Utilization rate is:-0.23593909-历史接受率为：-0.50970876-链路资源利用率为：-0.3724299
+At time: 7677--- Process VNs: 773;774;775;776;777;
+7677-当前接受的虚拟网络数为-773;774;776;777;-total fitness is:-14596.457-total cost is-6966.4526-benifit-cost ratio is:-0.4772701-Node Utilization rate is:-0.24593908-历史接受率为：-0.511254-链路资源利用率为：-0.39205605
+At time: 7726--- Process VNs: 778;779;780;781;782;
+7726-当前接受的虚拟网络数为-778;780;781;782;-total fitness is:-14732.058-total cost is-7032.553-benifit-cost ratio is:-0.47736394-Node Utilization rate is:-0.26531404-历史接受率为：-0.51277953-链路资源利用率为：-0.40560746
+At time: 7776--- Process VNs: 783;784;785;786;787;
+7776-当前接受的虚拟网络数为-783;784;786;-total fitness is:-14785.459-total cost is-7063.454-benifit-cost ratio is:-0.47772977-Node Utilization rate is:-0.27468908-历史接受率为：-0.5126984-链路资源利用率为：-0.40607476
+At time: 7825--- Process VNs: 788;789;790;791;792;
+7825-当前接受的虚拟网络数为-788;789;791;-total fitness is:-14844.76-total cost is-7096.7554-benifit-cost ratio is:-0.4780647-Node Utilization rate is:-0.29156405-历史接受率为：-0.5126183-链路资源利用率为：-0.42640185
+At time: 7874--- Process VNs: 793;794;795;796;797;798;
+7874-当前接受的虚拟网络数为-793;794;795;796;797;-total fitness is:-15030.86-total cost is-7197.8564-benifit-cost ratio is:-0.47887188-Node Utilization rate is:-0.31375158-历史接受率为：-0.514867-链路资源利用率为：-0.4614486
+At time: 7924--- Process VNs: 799;800;801;802;
+7924-当前接受的虚拟网络数为-799;801;-total fitness is:-15103.361-total cost is-7224.8574-benifit-cost ratio is:-0.4783609-Node Utilization rate is:-0.32093906-历史接受率为：-0.5140187-链路资源利用率为：-0.482243
+At time: 7973--- Process VNs: 803;804;805;806;
+7973-当前接受的虚拟网络数为-803;806;-total fitness is:-15122.962-total cost is-7237.4585-benifit-cost ratio is:-0.47857413-Node Utilization rate is:-0.31187654-历史接受率为：-0.5131783-链路资源利用率为：-0.4453271
+At time: 8022--- Process VNs: 807;808;809;810;811;812;
+8022-当前接受的虚拟网络数为-807;808;810;811;-total fitness is:-15286.763-total cost is-7308.2593-benifit-cost ratio is:-0.47807762-Node Utilization rate is:-0.33968908-历史接受率为：-0.51384616-链路资源利用率为：-0.5126168
+At time: 8072--- Process VNs: 813;814;815;816;
+8072-当前接受的虚拟网络数为-813;816;-total fitness is:-15327.764-total cost is-7326.2603-benifit-cost ratio is:-0.4779732-Node Utilization rate is:-0.34750158-历史接受率为：-0.5130168-链路资源利用率为：-0.5266355
+At time: 8122--- Process VNs: 817;818;819;820;
+8122-当前接受的虚拟网络数为-817;818;819;820;-total fitness is:-15358.665-total cost is-7351.6616-benifit-cost ratio is:-0.4786654-Node Utilization rate is:-0.32656407-历史接受率为：-0.5152439-链路资源利用率为：-0.46682245
+At time: 8171--- Process VNs: 821;822;823;824;825;
+8171-当前接受的虚拟网络数为-821;822;824;-total fitness is:-15498.966-total cost is-7407.963-benifit-cost ratio is:-0.47796497-Node Utilization rate is:-0.32687658-历史接受率为：-0.5151515-链路资源利用率为：-0.5102804
+At time: 8221--- Process VNs: 826;827;828;829;830;
+8221-当前接受的虚拟网络数为-826;829;-total fitness is:-15536.967-total cost is-7424.964-benifit-cost ratio is:-0.4778902-Node Utilization rate is:-0.32125157-历史接受率为：-0.5135542-链路资源利用率为：-0.5175234
+At time: 8270--- Process VNs: 831;832;833;834;835;836;
+8270-当前接受的虚拟网络数为-831;832;834;836;-total fitness is:-15615.067-total cost is-7475.5645-benifit-cost ratio is:-0.47874045-Node Utilization rate is:-0.29031408-历史接受率为：-0.51420027-链路资源利用率为：-0.45724297
+At time: 8319--- Process VNs: 837;838;839;840;
+8319-当前接受的虚拟网络数为-837;838;839;840;-total fitness is:-15765.568-total cost is-7538.5654-benifit-cost ratio is:-0.47816643-Node Utilization rate is:-0.2906266-历史接受率为：-0.51636904-链路资源利用率为：-0.4834112
+At time: 8369--- Process VNs: 841;842;843;844;
+8369-当前接受的虚拟网络数为-841;842;843;844;-total fitness is:-15863.869-total cost is-7598.366-benifit-cost ratio is:-0.4789731-Node Utilization rate is:-0.30187654-历史接受率为：-0.5185185-链路资源利用率为：-0.4691589
+At time: 8419--- Process VNs: 845;846;847;848;849;850;
+8419-当前接受的虚拟网络数为-845;846;847;850;-total fitness is:-16200.37-total cost is-7715.8667-benifit-cost ratio is:-0.47627717-Node Utilization rate is:-0.29781407-历史接受率为：-0.51911765-链路资源利用率为：-0.49929905
+At time: 8469--- Process VNs: 851;852;853;854;855;856;
+8469-当前接受的虚拟网络数为-851;852;853;855;-total fitness is:-16267.171-total cost is-7759.6675-benifit-cost ratio is:-0.47701395-Node Utilization rate is:-0.31312656-历史接受率为：-0.51970804-链路资源利用率为：-0.50934577
+At time: 8518--- Process VNs: 857;858;859;860;
+8518-当前接受的虚拟网络数为-857;858;860;-total fitness is:-16350.372-total cost is-7790.868-benifit-cost ratio is:-0.47649485-Node Utilization rate is:-0.32218903-历史接受率为：-0.52034885-链路资源利用率为：-0.54135513
+At time: 8567--- Process VNs: 861;862;863;864;865;
+8567-当前接受的虚拟网络数为-861;862;-total fitness is:-16356.873-total cost is-7797.369-benifit-cost ratio is:-0.47670293-Node Utilization rate is:-0.30843908-历史接受率为：-0.51878613-链路资源利用率为：-0.50677574
+At time: 8617--- Process VNs: 866;867;868;869;870;
+8617-当前接受的虚拟网络数为-866;867;868;870;-total fitness is:-16460.275-total cost is-7853.27-benifit-cost ratio is:-0.47710443-Node Utilization rate is:-0.31093907-历史接受率为：-0.52011496-链路资源利用率为：-0.513785
+At time: 8666--- Process VNs: 871;872;873;874;
+8666-当前接受的虚拟网络数为-871;872;873;874;-total fitness is:-16593.379-total cost is-7914.8706-benifit-cost ratio is:-0.4769897-Node Utilization rate is:-0.30500156-历史接受率为：-0.52217454-链路资源利用率为：-0.50443923
+At time: 8715--- Process VNs: 875;876;877;878;
+8715-当前接受的虚拟网络数为-875;877;878;-total fitness is:-16678.88-total cost is-7955.8716-benifit-cost ratio is:-0.4770027-Node Utilization rate is:-0.30281407-历史接受率为：-0.52279204-链路资源利用率为：-0.48457944
+At time: 8765--- Process VNs: 879;880;881;882;883;884;
+8765-当前接受的虚拟网络数为-879;881;882;883;-total fitness is:-16793.482-total cost is-8008.4727-benifit-cost ratio is:-0.4768798-Node Utilization rate is:-0.28656405-历史接受率为：-0.523338-链路资源利用率为：-0.46285045
+At time: 8815--- Process VNs: 885;886;887;888;
+8815-当前接受的虚拟网络数为-885;886;-total fitness is:-16829.385-total cost is-8025.8735-benifit-cost ratio is:-0.47689644-Node Utilization rate is:-0.27093905-历史接受率为：-0.5225352-链路资源利用率为：-0.43621492
+At time: 8865--- Process VNs: 889;890;891;892;893;
+8865-当前接受的虚拟网络数为-889;891;892;-total fitness is:-16848.287-total cost is-8044.7744-benifit-cost ratio is:-0.4774832-Node Utilization rate is:-0.24656409-历史接受率为：-0.52240896-链路资源利用率为：-0.38831776
+At time: 8915--- Process VNs: 894;895;896;897;
+8915-当前接受的虚拟网络数为-894;896;-total fitness is:-17029.389-total cost is-8107.8755-benifit-cost ratio is:-0.4761108-Node Utilization rate is:-0.24187654-历史接受率为：-0.5216178-链路资源利用率为：-0.42943925
+At time: 8964--- Process VNs: 898;899;900;901;
+8964-当前接受的虚拟网络数为-898;899;901;-total fitness is:-17070.89-total cost is-8132.8765-benifit-cost ratio is:-0.4764178-Node Utilization rate is:-0.24343908-历史接受率为：-0.5222222-链路资源利用率为：-0.43107474
+At time: 9014--- Process VNs: 902;903;904;905;906;907;
+9014-当前接受的虚拟网络数为-902;903;905;907;-total fitness is:-17187.693-total cost is-8185.6772-benifit-cost ratio is:-0.47625223-Node Utilization rate is:-0.26843905-历史接受率为：-0.5227586-链路资源利用率为：-0.47102803
+At time: 9063--- Process VNs: 908;909;910;911;912;913;
+9063-当前接受的虚拟网络数为-908;910;913;-total fitness is:-17217.596-total cost is-8204.078-benifit-cost ratio is:-0.47649384-Node Utilization rate is:-0.26843905-历史接受率为：-0.5219178-链路资源利用率为：-0.47429907
+At time: 9113--- Process VNs: 914;915;916;917;918;919;
+9113-当前接受的虚拟网络数为-914;916;917;918;-total fitness is:-17262.998-total cost is-8236.9795-benifit-cost ratio is:-0.47714654-Node Utilization rate is:-0.28968906-历史接受率为：-0.52244896-链路资源利用率为：-0.48364484
+At time: 9163--- Process VNs: 920;921;922;923;
+9163-当前接受的虚拟网络数为-920;921;923;-total fitness is:-17331.701-total cost is-8268.181-benifit-cost ratio is:-0.47705534-Node Utilization rate is:-0.27625155-历史接受率为：-0.5230352-链路资源利用率为：-0.4834112
+At time: 9213--- Process VNs: 924;925;926;927;928;
+9213-当前接受的虚拟网络数为-924;926;928;-total fitness is:-17382.004-total cost is-8294.981-benifit-cost ratio is:-0.47721663-Node Utilization rate is:-0.26593906-历史接受率为：-0.5229111-链路资源利用率为：-0.4432243
+At time: 9262--- Process VNs: 929;930;931;932;933;934;
+9262-当前接受的虚拟网络数为-929;930;932;934;-total fitness is:-17565.307-total cost is-8377.282-benifit-cost ratio is:-0.47692207-Node Utilization rate is:-0.24875158-历史接受率为：-0.52342707-链路资源利用率为：-0.36168224
+At time: 9312--- Process VNs: 935;936;937;938;939;940;
+9312-当前接受的虚拟网络数为-935;936;937;938;939;-total fitness is:-17818.008-total cost is-8480.983-benifit-cost ratio is:-0.4759782-Node Utilization rate is:-0.27875155-历史接受率为：-0.52526593-链路资源利用率为：-0.4443925
+At time: 9362--- Process VNs: 941;942;943;944;
+9362-当前接受的虚拟网络数为-941;943;-total fitness is:-17910.709-total cost is-8516.685-benifit-cost ratio is:-0.47550794-Node Utilization rate is:-0.28343904-历史接受率为：-0.5245033-链路资源利用率为：-0.47242993
+At time: 9411--- Process VNs: 945;946;947;948;949;
+9411-当前接受的虚拟网络数为-945;946;947;948;949;-total fitness is:-18089.01-total cost is-8605.985-benifit-cost ratio is:-0.4757577-Node Utilization rate is:-0.3090641-历史接受率为：-0.52700925-链路资源利用率为：-0.47897196
+At time: 9461--- Process VNs: 950;951;952;953;954;
+9461-当前接受的虚拟网络数为-950;953;-total fitness is:-18138.012-total cost is-8633.486-benifit-cost ratio is:-0.47598857-Node Utilization rate is:-0.3090641-历史接受率为：-0.52555704-链路资源利用率为：-0.47593457
+At time: 9510--- Process VNs: 955;956;957;958;
+9510-当前接受的虚拟网络数为-955;957;958;-total fitness is:-18326.914-total cost is-8717.887-benifit-cost ratio is:-0.47568765-Node Utilization rate is:-0.30218905-历史接受率为：-0.52610964-链路资源利用率为：-0.48621494
+At time: 9559--- Process VNs: 959;960;961;962;963;964;
+9559-当前接受的虚拟网络数为-959;962;963;964;-total fitness is:-18530.516-total cost is-8808.487-benifit-cost ratio is:-0.47535035-Node Utilization rate is:-0.29406404-历史接受率为：-0.52658886-链路资源利用率为：-0.46471965
+At time: 9609--- Process VNs: 965;966;967;968;
+9609-当前接受的虚拟网络数为-965;966;968;-total fitness is:-18638.717-total cost is-8861.1875-benifit-cost ratio is:-0.47541833-Node Utilization rate is:-0.29968905-历史接受率为：-0.5271318-链路资源利用率为：-0.49042058
+At time: 9658--- Process VNs: 969;970;971;972;
+9658-当前接受的虚拟网络数为-969;970;971;972;-total fitness is:-18786.52-total cost is-8929.988-benifit-cost ratio is:-0.47534022-Node Utilization rate is:-0.29031408-历史接受率为：-0.52895755-链路资源利用率为：-0.48107475
+At time: 9708--- Process VNs: 973;974;975;976;
+9708-当前接受的虚拟网络数为-973;975;-total fitness is:-18805.22-total cost is-8940.189-benifit-cost ratio is:-0.47540998-Node Utilization rate is:-0.29687655-历史接受率为：-0.52820516-链路资源利用率为：-0.4864486
+At time: 9757--- Process VNs: 977;978;979;980;
+9757-当前接受的虚拟网络数为-977;-total fitness is:-18805.223-total cost is-8940.19-benifit-cost ratio is:-0.47540998-Node Utilization rate is:-0.27843904-历史接受率为：-0.52618134-链路资源利用率为：-0.46168226
+At time: 9807--- Process VNs: 981;982;983;984;985;
+9807-当前接受的虚拟网络数为-981;982;985;-total fitness is:-18874.824-total cost is-8972.792-benifit-cost ratio is:-0.47538415-Node Utilization rate is:-0.27687657-历史接受率为：-0.5260483-链路资源利用率为：-0.4635514
+At time: 9857--- Process VNs: 986;987;988;989;
+9857-当前接受的虚拟网络数为-986;987;-total fitness is:-18958.426-total cost is-9008.893-benifit-cost ratio is:-0.475192-Node Utilization rate is:-0.2778141-历史接受率为：-0.5253165-链路资源利用率为：-0.48200935
+At time: 9906--- Process VNs: 990;991;992;993;994;
+9906-当前接受的虚拟网络数为-990;991;993;994;-total fitness is:-19072.03-total cost is-9062.994-benifit-cost ratio is:-0.4751982-Node Utilization rate is:-0.25406408-历史接受率为：-0.52644837-链路资源利用率为：-0.46121496
+At time: 9956--- Process VNs: 995;996;997;998;999;1000;
+9956-当前接受的虚拟网络数为-995;997;999;-total fitness is:-19201.031-total cost is-9120.495-benifit-cost ratio is:-0.47500026-Node Utilization rate is:-0.26125157-历史接受率为：-0.52565706-链路资源利用率为：-0.5
+At time: 10005--- Process VNs: 1001;1002;1003;1004;1005;1006;
+10005-当前接受的虚拟网络数为-1001;-total fitness is:-19201.033-total cost is-9120.496-benifit-cost ratio is:-0.4750003-Node Utilization rate is:-0.23781407-历史接受率为：-0.52238804-链路资源利用率为：-0.43294394
+At time: 10055--- Process VNs: 1007;1008;1009;1010;1011;
+10055-当前接受的虚拟网络数为-1007;1008;1009;1010;1011;-total fitness is:-19277.537-total cost is-9173.497-benifit-cost ratio is:-0.4758646-Node Utilization rate is:-0.26031405-历史接受率为：-0.5247525-链路资源利用率为：-0.42196262
+At time: 10104--- Process VNs: 1012;1013;1014;1015;
+10104-当前接受的虚拟网络数为-1012;1013;1014;1015;-total fitness is:-19302.438-total cost is-9198.397-benifit-cost ratio is:-0.4765407-Node Utilization rate is:-0.27437657-历史接受率为：-0.5265105-链路资源利用率为：-0.41822428
+At time: 10154--- Process VNs: 1016;1017;1018;1019;1020;
+10154-当前接受的虚拟网络数为-1016;-total fitness is:-19302.44-total cost is-9198.398-benifit-cost ratio is:-0.4765407-Node Utilization rate is:-0.26000154-历史接受率为：-0.5239264-链路资源利用率为：-0.38574767
+At time: 10203--- Process VNs: 1021;1022;1023;1024;
+10203-当前接受的虚拟网络数为-1021;1022;-total fitness is:-19374.742-total cost is-9225.199-benifit-cost ratio is:-0.47614565-Node Utilization rate is:-0.26093906-历史接受率为：-0.5232274-链路资源利用率为：-0.3953271
+At time: 10252--- Process VNs: 1025;1026;1027;1028;
+10252-当前接受的虚拟网络数为-1025;1026;1027;-total fitness is:-19509.545-total cost is-9284.001-benifit-cost ratio is:-0.4758697-Node Utilization rate is:-0.29031408-历史接受率为：-0.5237515-链路资源利用率为：-0.4436916
+At time: 10302--- Process VNs: 1029;1030;1031;1032;1033;1034;
+10302-当前接受的虚拟网络数为-1029;1030;1031;1033;-total fitness is:-19639.947-total cost is-9342.901-benifit-cost ratio is:-0.47570908-Node Utilization rate is:-0.28125155-历史接受率为：-0.5242131-链路资源利用率为：-0.4453271
+At time: 10352--- Process VNs: 1035;1036;1037;1038;1039;1040;
+10352-当前接受的虚拟网络数为-1035;1036;1037;1038;-total fitness is:-19779.35-total cost is-9402.303-benifit-cost ratio is:-0.47535956-Node Utilization rate is:-0.2725016-历史接受率为：-0.52466905-链路资源利用率为：-0.40303737
+At time: 10401--- Process VNs: 1041;1042;1043;1044;1045;1046;
+10401-当前接受的虚拟网络数为-1041;1042;1043;1044;1045;1046;-total fitness is:-20075.951-total cost is-9523.903-benifit-cost ratio is:-0.47439364-Node Utilization rate is:-0.29468906-历史接受率为：-0.52751195-链路资源利用率为：-0.45724297
+At time: 10451--- Process VNs: 1047;1048;1049;1050;1051;
+10451-当前接受的虚拟网络数为-1047;1048;1050;1051;-total fitness is:-20265.352-total cost is-9601.805-benifit-cost ratio is:-0.473804-Node Utilization rate is:-0.3012516-历史接受率为：-0.5285714-链路资源利用率为：-0.48457944
+At time: 10501--- Process VNs: 1052;1053;1054;1055;1056;1057;
+10501-当前接受的虚拟网络数为-1052;1054;1055;1056;1057;-total fitness is:-20404.654-total cost is-9677.105-benifit-cost ratio is:-0.4742597-Node Utilization rate is:-0.31437653-历史接受率为：-0.53017753-链路资源利用率为：-0.46682245
+At time: 10550--- Process VNs: 1058;1059;1060;1061;1062;
+10550-当前接受的虚拟网络数为-1058;1059;1062;-total fitness is:-20474.857-total cost is-9715.807-benifit-cost ratio is:-0.47452378-Node Utilization rate is:-0.31968904-历史接受率为：-0.5300353-链路资源利用率为：-0.4670561
+At time: 10599--- Process VNs: 1063;1064;1065;1066;1067;1068;
+10599-当前接受的虚拟网络数为-1063;1064;1065;1066;1067;1068;-total fitness is:-20588.66-total cost is-9780.607-benifit-cost ratio is:-0.47504827-Node Utilization rate is:-0.36156404-历史接受率为：-0.5327869-链路资源利用率为：-0.5018692
+At time: 10649--- Process VNs: 1069;1070;1071;1072;
+10649-当前接受的虚拟网络数为-1069;1070;-total fitness is:-20624.062-total cost is-9800.009-benifit-cost ratio is:-0.47517353-Node Utilization rate is:-0.34718907-历史接受率为：-0.5320887-链路资源利用率为：-0.4801402
+At time: 10699--- Process VNs: 1073;1074;1075;1076;1077;
+10699-当前接受的虚拟网络数为-1073;1074;-total fitness is:-20650.764-total cost is-9817.71-benifit-cost ratio is:-0.4754163-Node Utilization rate is:-0.34875154-历史接受率为：-0.53077817-链路资源利用率为：-0.4834112
+At time: 10748--- Process VNs: 1078;1079;1080;1081;1082;
+10748-当前接受的虚拟网络数为-1078;1079;1081;-total fitness is:-20678.465-total cost is-9837.411-benifit-cost ratio is:-0.47573218-Node Utilization rate is:-0.32531404-历史接受率为：-0.53063583-链路资源利用率为：-0.45584112
+At time: 10797--- Process VNs: 1083;1084;1085;1086;1087;
+10797-当前接受的虚拟网络数为-1083;1084;1085;1086;-total fitness is:-20798.768-total cost is-9896.213-benifit-cost ratio is:-0.47580767-Node Utilization rate is:-0.34375155-历史接受率为：-0.5316456-链路资源利用率为：-0.48060745
+At time: 10847--- Process VNs: 1088;1089;1090;1091;1092;
+10847-当前接受的虚拟网络数为-1088;1092;-total fitness is:-20866.469-total cost is-9921.914-benifit-cost ratio is:-0.4754956-Node Utilization rate is:-0.33875155-历史接受率为：-0.5303551-链路资源利用率为：-0.49088782
+At time: 10896--- Process VNs: 1093;1094;1095;1096;
+10896-当前接受的虚拟网络数为-1093;1094;-total fitness is:-20879.771-total cost is-9932.215-benifit-cost ratio is:-0.47568598-Node Utilization rate is:-0.33437657-历史接受率为：-0.5296804-链路资源利用率为：-0.4943925
+At time: 10946--- Process VNs: 1097;1098;1099;1100;1101;
+10946-当前接受的虚拟网络数为-1097;1099;1101;-total fitness is:-20934.973-total cost is-9960.416-benifit-cost ratio is:-0.4757788-Node Utilization rate is:-0.35031408-历史接受率为：-0.5295454-链路资源利用率为：-0.51401865
+At time: 10995--- Process VNs: 1102;1103;1104;1105;1106;
+10995-当前接受的虚拟网络数为-1102;1105;1106;-total fitness is:-20953.375-total cost is-9978.817-benifit-cost ratio is:-0.47623914-Node Utilization rate is:-0.35093904-历史接受率为：-0.5294118-链路资源利用率为：-0.49228972
+At time: 11044--- Process VNs: 1107;1108;1109;1110;1111;
+11044-当前接受的虚拟网络数为-1107;1108;1109;1110;-total fitness is:-21085.977-total cost is-10047.918-benifit-cost ratio is:-0.47652134-Node Utilization rate is:-0.35156405-历史接受率为：-0.5304054-链路资源利用率为：-0.49112147
+At time: 11094--- Process VNs: 1112;1113;1114;1115;
+11094-当前接受的虚拟网络数为-1112;1113;1114;1115;-total fitness is:-21162.979-total cost is-10089.919-benifit-cost ratio is:-0.47677216-Node Utilization rate is:-0.34687656-历史接受率为：-0.53198653-链路资源利用率为：-0.4448598
+At time: 11143--- Process VNs: 1116;1117;1118;1119;
+11143-当前接受的虚拟网络数为-1116;1117;1118;-total fitness is:-21295.08-total cost is-10149.52-benifit-cost ratio is:-0.47661334-Node Utilization rate is:-0.31281406-历史接受率为：-0.53243846-链路资源利用率为：-0.38574767
+At time: 11193--- Process VNs: 1120;1121;1122;1123;
+11193-当前接受的虚拟网络数为-1120;1122;-total fitness is:-21334.781-total cost is-10174.221-benifit-cost ratio is:-0.47688422-Node Utilization rate is:-0.29375154-历史接受率为：-0.53177255-链路资源利用率为：-0.38387853
+At time: 11242--- Process VNs: 1124;1125;1126;1127;
+11242-当前接受的虚拟网络数为-1124;1125;1126;1127;-total fitness is:-21416.482-total cost is-10215.921-benifit-cost ratio is:-0.4770121-Node Utilization rate is:-0.2856266-历史接受率为：-0.53333336-链路资源利用率为：-0.3558411
+At time: 11291--- Process VNs: 1128;1129;1130;1131;1132;1133;
+11291-当前接受的虚拟网络数为-1128;1130;1131;1132;1133;-total fitness is:-21674.686-total cost is-10333.622-benifit-cost ratio is:-0.47675994-Node Utilization rate is:-0.28000158-历史接受率为：-0.5348066-链路资源利用率为：-0.42570096
+At time: 11341--- Process VNs: 1134;1135;1136;1137;
+11341-当前接受的虚拟网络数为-1134;1136;1137;-total fitness is:-21754.488-total cost is-10372.424-benifit-cost ratio is:-0.47679466-Node Utilization rate is:-0.28062654-历史接受率为：-0.5352423-链路资源利用率为：-0.41845793
+At time: 11391--- Process VNs: 1138;1139;1140;1141;1142;1143;
+11391-当前接受的虚拟网络数为-1138;1139;1140;1142;-total fitness is:-21977.09-total cost is-10455.025-benifit-cost ratio is:-0.47572383-Node Utilization rate is:-0.28437656-历史接受率为：-0.5355969-链路资源利用率为：-0.48364484
+At time: 11440--- Process VNs: 1144;1145;1146;1147;1148;
+11440-当前接受的虚拟网络数为-1144;1146;1148;-total fitness is:-22026.291-total cost is-10483.727-benifit-cost ratio is:-0.47596422-Node Utilization rate is:-0.29281408-历史接受率为：-0.53544164-链路资源利用率为：-0.5009346
+At time: 11490--- Process VNs: 1149;1150;1151;1152;1153;
+11490-当前接受的虚拟网络数为-1149;1150;1153;-total fitness is:-22132.492-total cost is-10528.927-benifit-cost ratio is:-0.4757226-Node Utilization rate is:-0.27875155-历史接受率为：-0.53528774-链路资源利用率为：-0.47383177
+At time: 11540--- Process VNs: 1154;1155;1156;1157;1158;1159;
+11540-当前接受的虚拟网络数为-1154;1155;1157;-total fitness is:-22213.793-total cost is-10564.728-benifit-cost ratio is:-0.47559315-Node Utilization rate is:-0.26437658-历史接受率为：-0.5345572-链路资源利用率为：-0.49719626
+At time: 11589--- Process VNs: 1160;1161;1162;1163;1164;1165;
+11589-当前接受的虚拟网络数为-1160;1162;1163;-total fitness is:-22250.594-total cost is-10590.028-benifit-cost ratio is:-0.47594362-Node Utilization rate is:-0.25343907-历史接受率为：-0.5338346-链路资源利用率为：-0.478271
+At time: 11639--- Process VNs: 1166;1167;1168;1169;1170;1171;
+11639-当前接受的虚拟网络数为-1166;1167;1168;-total fitness is:-22302.695-total cost is-10616.129-benifit-cost ratio is:-0.47600207-Node Utilization rate is:-0.25562656-历史接受率为：-0.5331197-链路资源利用率为：-0.48878503
+At time: 11689--- Process VNs: 1172;1173;1174;1175;
+11689-当前接受的虚拟网络数为-1172;-total fitness is:-22302.697-total cost is-10616.13-benifit-cost ratio is:-0.47600207-Node Utilization rate is:-0.24843907-历史接受率为：-0.5314164-链路资源利用率为：-0.47126168
+At time: 11739--- Process VNs: 1176;1177;1178;1179;1180;1181;
+11739-当前接受的虚拟网络数为-1176;1179;1181;-total fitness is:-22364.398-total cost is-10648.831-benifit-cost ratio is:-0.47615102-Node Utilization rate is:-0.26750153-历史接受率为：-0.53072035-链路资源利用率为：-0.49205607
+At time: 11789--- Process VNs: 1182;1183;1184;1185;1186;1187;
+11789-当前接受的虚拟网络数为-1182;1187;-total fitness is:-22378.4-total cost is-10658.832-benifit-cost ratio is:-0.4763-Node Utilization rate is:-0.26593906-历史接受率为：-0.5289779-链路资源利用率为：-0.4787383
+At time: 11838--- Process VNs: 1188;1189;1190;1191;1192;
+11838-当前接受的虚拟网络数为-1188;1191;-total fitness is:-22415.902-total cost is-10679.333-benifit-cost ratio is:-0.47641772-Node Utilization rate is:-0.25531405-历史接受率为：-0.52780694-链路资源利用率为：-0.45257008
+At time: 11888--- Process VNs: 1193;1194;1195;1196;
+11888-当前接受的虚拟网络数为-1193;1194;1195;-total fitness is:-22511.904-total cost is-10721.334-benifit-cost ratio is:-0.47625175-Node Utilization rate is:-0.25312656-历史接受率为：-0.5282427-链路资源利用率为：-0.4488318
+At time: 11938--- Process VNs: 1197;1198;1199;1200;1201;
+11938-当前接受的虚拟网络数为-1197;1199;-total fitness is:-22569.006-total cost is-10748.935-benifit-cost ratio is:-0.47626975-Node Utilization rate is:-0.25218904-历史接受率为：-0.52708334-链路资源利用率为：-0.44065422
+At time: 11987--- Process VNs: 1202;1203;1204;1205;
+11987-当前接受的虚拟网络数为-1202;1204;1205;-total fitness is:-22604.008-total cost is-10771.436-benifit-cost ratio is:-0.4765277-Node Utilization rate is:-0.2725016-历史接受率为：-0.52751815-链路资源利用率为：-0.45070094
+At time: 12037--- Process VNs: 1206;1207;1208;1209;
+12037-当前接受的虚拟网络数为-1206;1207;1208;-total fitness is:-22697.809-total cost is-10816.236-benifit-cost ratio is:-0.4765322-Node Utilization rate is:-0.27437657-历史接受率为：-0.5279503-链路资源利用率为：-0.45677572
+At time: 12086--- Process VNs: 1210;1211;1212;1213;1214;1215;
+12086-当前接受的虚拟网络数为-1210;1211;1212;1214;-total fitness is:-22754.709-total cost is-10855.137-benifit-cost ratio is:-0.47705013-Node Utilization rate is:-0.27406406-历史接受率为：-0.5283213-链路资源利用率为：-0.40257007
+At time: 12135--- Process VNs: 1216;1217;1218;1219;1220;1221;
+12135-当前接受的虚拟网络数为-1216;1217;1218;1219;1220;-total fitness is:-22901.31-total cost is-10924.237-benifit-cost ratio is:-0.47701362-Node Utilization rate is:-0.28093904-历史接受率为：-0.5297131-链路资源利用率为：-0.41775703
+At time: 12184--- Process VNs: 1222;1223;1224;1225;1226;1227;
+12184-当前接受的虚拟网络数为-1222;1223;1224;1225;-total fitness is:-22998.21-total cost is-10975.138-benifit-cost ratio is:-0.47721702-Node Utilization rate is:-0.29375154-历史接受率为：-0.5300714-链路资源利用率为：-0.4301402
+At time: 12234--- Process VNs: 1228;1229;1230;1231;1232;1233;
+12234-当前接受的虚拟网络数为-1228;1229;1231;-total fitness is:-23046.113-total cost is-11006.038-benifit-cost ratio is:-0.4775659-Node Utilization rate is:-0.29250157-历史接受率为：-0.5294118-链路资源利用率为：-0.40163553
+At time: 12284--- Process VNs: 1234;1235;1236;1237;1238;
+12284-当前接受的虚拟网络数为-1234;1236;1238;-total fitness is:-23239.715-total cost is-11085.139-benifit-cost ratio is:-0.47699118-Node Utilization rate is:-0.32312655-历史接受率为：-0.52929294-链路资源利用率为：-0.47803736
+At time: 12333--- Process VNs: 1239;1240;1241;1242;1243;
+12333-当前接受的虚拟网络数为-1239;1240;1243;-total fitness is:-23322.316-total cost is-11115.739-benifit-cost ratio is:-0.47661385-Node Utilization rate is:-0.30343908-历史接受率为：-0.52917504-链路资源利用率为：-0.4600467
+At time: 12383--- Process VNs: 1244;1245;1246;1247;
+12383-当前接受的虚拟网络数为-1244;1245;1246;1247;-total fitness is:-23398.918-total cost is-11158.84-benifit-cost ratio is:-0.47689554-Node Utilization rate is:-0.28375155-历史接受率为：-0.5305918-链路资源利用率为：-0.3906542
+At time: 12432--- Process VNs: 1248;1249;1250;1251;
+12432-当前接受的虚拟网络数为-1248;1250;1251;-total fitness is:-23549.92-total cost is-11217.341-benifit-cost ratio is:-0.47632182-Node Utilization rate is:-0.29937655-历史接受率为：-0.531-链路资源利用率为：-0.4462617
+At time: 12482--- Process VNs: 1252;1253;1254;1255;1256;
+12482-当前接受的虚拟网络数为-1252;1255;1256;-total fitness is:-23633.223-total cost is-11259.143-benifit-cost ratio is:-0.47641164-Node Utilization rate is:-0.29718906-历史接受率为：-0.5308765-链路资源利用率为：-0.45210278
+At time: 12532--- Process VNs: 1257;1258;1259;1260;
+12532-当前接受的虚拟网络数为-1257;1259;1260;-total fitness is:-23688.725-total cost is-11294.144-benifit-cost ratio is:-0.47677296-Node Utilization rate is:-0.2750016-历史接受率为：-0.53128105-链路资源利用率为：-0.40257007
+At time: 12581--- Process VNs: 1261;1262;1263;1264;1265;1266;
+12581-当前接受的虚拟网络数为-1261;1262;1263;1264;1265;1266;-total fitness is:-23900.727-total cost is-11403.6455-benifit-cost ratio is:-0.47712547-Node Utilization rate is:-0.27812654-历史接受率为：-0.5335968-链路资源利用率为：-0.39813083
+At time: 12630--- Process VNs: 1267;1268;1269;1270;
+12630-当前接受的虚拟网络数为-1267;1268;1270;-total fitness is:-24089.629-total cost is-11475.047-benifit-cost ratio is:-0.476348-Node Utilization rate is:-0.29468906-历史接受率为：-0.53399014-链路资源利用率为：-0.46892524
+At time: 12680--- Process VNs: 1271;1272;1273;1274;1275;
+12680-当前接受的虚拟网络数为-1271;1272;-total fitness is:-24118.932-total cost is-11489.848-benifit-cost ratio is:-0.47638294-Node Utilization rate is:-0.30218905-历史接受率为：-0.53287536-链路资源利用率为：-0.48037386
+At time: 12729--- Process VNs: 1276;1277;1278;1279;1280;
+12729-当前接受的虚拟网络数为-1276;1280;-total fitness is:-24126.334-total cost is-11497.249-benifit-cost ratio is:-0.47654355-Node Utilization rate is:-0.29781407-历史接受率为：-0.53176934-链路资源利用率为：-0.47126168
+At time: 12779--- Process VNs: 1281;1282;1283;1284;
+12779-当前接受的虚拟网络数为-1281;1283;1284;-total fitness is:-24156.637-total cost is-11519.05-benifit-cost ratio is:-0.47684824-Node Utilization rate is:-0.29281408-历史接受率为：-0.53216374-链路资源利用率为：-0.44556075
+At time: 12828--- Process VNs: 1285;1286;1287;1288;1289;
+12828-当前接受的虚拟网络数为-1285;1288;-total fitness is:-24181.94-total cost is-11533.351-benifit-cost ratio is:-0.4769407-Node Utilization rate is:-0.28375155-历史接受率为：-0.53106797-链路资源利用率为：-0.44813085
+At time: 12877--- Process VNs: 1290;1291;1292;1293;1294;1295;
+12877-当前接受的虚拟网络数为-1290;1291;1292;1294;-total fitness is:-24469.842-total cost is-11639.752-benifit-cost ratio is:-0.47567746-Node Utilization rate is:-0.28875154-历史接受率为：-0.531401-链路资源利用率为：-0.511215
+At time: 12926--- Process VNs: 1296;1297;1298;1299;
+12926-当前接受的虚拟网络数为-1296;1297;-total fitness is:-24475.844-total cost is-11645.753-benifit-cost ratio is:-0.475806-Node Utilization rate is:-0.25843906-历史接受率为：-0.53082854-链路资源利用率为：-0.45887852
+At time: 12976--- Process VNs: 1300;1301;1302;1303;1304;1305;
+12976-当前接受的虚拟网络数为-1300;1303;-total fitness is:-24528.346-total cost is-11669.254-benifit-cost ratio is:-0.47574565-Node Utilization rate is:-0.25593907-历史接受率为：-0.5292426-链路资源利用率为：-0.4651869
+At time: 13025--- Process VNs: 1306;1307;1308;1309;1310;1311;
+13025-当前接受的虚拟网络数为-1306;1307;1308;-total fitness is:-24558.648-total cost is-11692.556-benifit-cost ratio is:-0.47610745-Node Utilization rate is:-0.23562658-历史接受率为：-0.52862597-链路资源利用率为：-0.44929904
+At time: 13075--- Process VNs: 1312;1313;1314;1315;
+13075-当前接受的虚拟网络数为-1312;1313;1314;-total fitness is:-24630.35-total cost is-11731.757-benifit-cost ratio is:-0.47631305-Node Utilization rate is:-0.24343908-历史接受率为：-0.52901995-链路资源利用率为：-0.45700938
+At time: 13124--- Process VNs: 1316;1317;1318;1319;1320;
+13124-当前接受的虚拟网络数为-1316;1317;1319;-total fitness is:-24743.451-total cost is-11781.858-benifit-cost ratio is:-0.47616068-Node Utilization rate is:-0.25406408-历史接受率为：-0.52891-链路资源利用率为：-0.47523367
+At time: 13174--- Process VNs: 1321;1322;1323;1324;1325;1326;
+13174-当前接受的虚拟网络数为-1321;1326;-total fitness is:-24769.652-total cost is-11801.06-benifit-cost ratio is:-0.47643217-Node Utilization rate is:-0.22812659-历史接受率为：-0.5273585-链路资源利用率为：-0.42056078
+At time: 13224--- Process VNs: 1327;1328;1329;1330;1331;
+13224-当前接受的虚拟网络数为-1327;1328;1330;-total fitness is:-24837.455-total cost is-11831.86-benifit-cost ratio is:-0.47637168-Node Utilization rate is:-0.23125154-历史接受率为：-0.52725565-链路资源利用率为：-0.43855143
+At time: 13273--- Process VNs: 1332;1333;1334;1335;
+13273-当前接受的虚拟网络数为-1332;1334;-total fitness is:-24856.857-total cost is-11846.762-benifit-cost ratio is:-0.47659934-Node Utilization rate is:-0.22187656-历史接受率为：-0.5267104-链路资源利用率为：-0.41822428
+At time: 13323--- Process VNs: 1336;1337;1338;1339;1340;
+13323-当前接受的虚拟网络数为-1336;1337;1338;1339;-total fitness is:-25043.959-total cost is-11939.362-benifit-cost ratio is:-0.47673622-Node Utilization rate is:-0.23437655-历史接受率为：-0.5275444-链路资源利用率为：-0.41682243
+At time: 13372--- Process VNs: 1341;1342;1343;1344;1345;1346;
+13372-当前接受的虚拟网络数为-1341;1342;1343;1344;-total fitness is:-25230.062-total cost is-12018.964-benifit-cost ratio is:-0.47637472-Node Utilization rate is:-0.23843908-历史接受率为：-0.527881-链路资源利用率为：-0.42476636
+At time: 13421--- Process VNs: 1347;1348;1349;1350;1351;
+13421-当前接受的虚拟网络数为-1347;1348;1349;-total fitness is:-25322.564-total cost is-12063.965-benifit-cost ratio is:-0.47641164-Node Utilization rate is:-0.25718904-历史接受率为：-0.5277778-链路资源利用率为：-0.45934582
+At time: 13471--- Process VNs: 1352;1353;1354;1355;1356;1357;
+13471-当前接受的虚拟网络数为-1352;1357;-total fitness is:-25446.066-total cost is-12110.466-benifit-cost ratio is:-0.47592685-Node Utilization rate is:-0.25812656-历史接受率为：-0.5262673-链路资源利用率为：-0.46285045
+At time: 13520--- Process VNs: 1358;1359;1360;1361;1362;1363;
+13520-当前接受的虚拟网络数为-1358;1360;1362;1363;-total fitness is:-25536.87-total cost is-12163.268-benifit-cost ratio is:-0.47630224-Node Utilization rate is:-0.27531403-历史接受率为：-0.5266055-链路资源利用率为：-0.48364484
+At time: 13569--- Process VNs: 1364;1365;1366;1367;1368;
+13569-当前接受的虚拟网络数为-1364;1365;1366;-total fitness is:-25603.271-total cost is-12201.669-benifit-cost ratio is:-0.4765668-Node Utilization rate is:-0.28500158-历史接受率为：-0.5265082-链路资源利用率为：-0.49252337
+At time: 13619--- Process VNs: 1369;1370;1371;1372;
+13619-当前接受的虚拟网络数为-1369;1372;-total fitness is:-25684.373-total cost is-12231.77-benifit-cost ratio is:-0.47623393-Node Utilization rate is:-0.25875157-历史接受率为：-0.52597994-链路资源利用率为：-0.4873832
+At time: 13668--- Process VNs: 1373;1374;1375;1376;1377;1378;
+13668-当前接受的虚拟网络数为-1373;1374;1375;1378;-total fitness is:-25735.977-total cost is-12259.871-benifit-cost ratio is:-0.47637093-Node Utilization rate is:-0.26250154-历史接受率为：-0.5263158-链路资源利用率为：-0.49719626
+At time: 13717--- Process VNs: 1379;1380;1381;1382;1383;1384;
+13717-当前接受的虚拟网络数为-1379;1380;1381;1383;1384;-total fitness is:-25844.879-total cost is-12315.271-benifit-cost ratio is:-0.47650722-Node Utilization rate is:-0.28468907-历史接受率为：-0.52755195-链路资源利用率为：-0.5264019
+At time: 13767--- Process VNs: 1385;1386;1387;1388;
+13767-当前接受的虚拟网络数为-1385;1386;-total fitness is:-25869.682-total cost is-12330.572-benifit-cost ratio is:-0.47664183-Node Utilization rate is:-0.2725016-历史接受率为：-0.527027-链路资源利用率为：-0.48060745
+At time: 13816--- Process VNs: 1389;1390;1391;1392;1393;
+13816-当前接受的虚拟网络数为-1389;1390;1391;1393;-total fitness is:-26023.684-total cost is-12407.573-benifit-cost ratio is:-0.47678006-Node Utilization rate is:-0.2725016-历史接受率为：-0.5278276-链路资源利用率为：-0.4313084
+At time: 13866--- Process VNs: 1394;1395;1396;1397;1398;
+13866-当前接受的虚拟网络数为-1394;1395;1396;1398;-total fitness is:-26140.385-total cost is-12469.273-benifit-cost ratio is:-0.47701186-Node Utilization rate is:-0.29468906-历史接受率为：-0.52862257-链路资源利用率为：-0.44672894
+At time: 13915--- Process VNs: 1399;1400;1401;1402;1403;1404;
+13915-当前接受的虚拟网络数为-1399;1401;1402;1403;-total fitness is:-26364.086-total cost is-12558.974-benifit-cost ratio is:-0.47636673-Node Utilization rate is:-0.31812656-历史接受率为：-0.5289403-链路资源利用率为：-0.5130841
+At time: 13965--- Process VNs: 1405;1406;1407;1408;1409;
+13965-当前接受的虚拟网络数为-1405;1406;1407;-total fitness is:-26451.988-total cost is-12592.375-benifit-cost ratio is:-0.47604644-Node Utilization rate is:-0.3090641-历史接受率为：-0.5288376-链路资源利用率为：-0.5046729
+At time: 14015--- Process VNs: 1410;1411;1412;1413;
+14015-当前接受的虚拟网络数为-1410;1412;-total fitness is:-26484.09-total cost is-12609.476-benifit-cost ratio is:-0.4761151-Node Utilization rate is:-0.31093907-历史接受率为：-0.5283186-链路资源利用率为：-0.5126168
+At time: 14064--- Process VNs: 1414;1415;1416;1417;
+14064-当前接受的虚拟网络数为-1414;-total fitness is:-26484.092-total cost is-12609.477-benifit-cost ratio is:-0.4761151-Node Utilization rate is:-0.31093907-历史接受率为：-0.52691966-链路资源利用率为：-0.5126168
+At time: 14114--- Process VNs: 1418;1419;1420;1421;1422;1423;
+14114-当前接受的虚拟网络数为-1418;1420;1422;-total fitness is:-26590.594-total cost is-12660.978-benifit-cost ratio is:-0.47614497-Node Utilization rate is:-0.2621891-历史接受率为：-0.52636206-链路资源利用率为：-0.47056073
+At time: 14164--- Process VNs: 1424;1425;1426;1427;
+14164-当前接受的虚拟网络数为-1424;1425;-total fitness is:-26645.096-total cost is-12683.979-benifit-cost ratio is:-0.47603425-Node Utilization rate is:-0.22937655-历史接受率为：-0.5258545-链路资源利用率为：-0.41565418
+At time: 14214--- Process VNs: 1428;1429;1430;1431;1432;1433;
+14214-当前接受的虚拟网络数为-1428;1429;1433;-total fitness is:-26711.898-total cost is-12720.779-benifit-cost ratio is:-0.47622147-Node Utilization rate is:-0.24656409-历史接受率为：-0.5253054-链路资源利用率为：-0.4313084
+At time: 14263--- Process VNs: 1434;1435;1436;1437;
+14263-当前接受的虚拟网络数为-1434;1435;1437;-total fitness is:-26781.4-total cost is-12756.78-benifit-cost ratio is:-0.47632983-Node Utilization rate is:-0.26531404-历史接受率为：-0.5256745-链路资源利用率为：-0.45817757
+At time: 14313--- Process VNs: 1438;1439;1440;1441;
+14313-当前接受的虚拟网络数为-1438;-total fitness is:-26781.402-total cost is-12756.781-benifit-cost ratio is:-0.47632983-Node Utilization rate is:-0.23312658-历史接受率为：-0.5243056-链路资源利用率为：-0.40443927
+At time: 14363--- Process VNs: 1442;1443;1444;1445;1446;
+14363-当前接受的虚拟网络数为-1442;1444;1446;-total fitness is:-26827.504-total cost is-12786.883-benifit-cost ratio is:-0.47663334-Node Utilization rate is:-0.23468906-历史接受率为：-0.5242215-链路资源利用率为：-0.38551402
+At time: 14412--- Process VNs: 1447;1448;1449;1450;
+14412-当前接受的虚拟网络数为-1447;1448;1449;1450;-total fitness is:-26925.508-total cost is-12842.884-benifit-cost ratio is:-0.47697833-Node Utilization rate is:-0.23187655-历史接受率为：-0.525453-链路资源利用率为：-0.34789717
+At time: 14462--- Process VNs: 1451;1452;1453;1454;
+14462-当前接受的虚拟网络数为-1451;1452;1453;-total fitness is:-27031.908-total cost is-12895.785-benifit-cost ratio is:-0.4770579-Node Utilization rate is:-0.24125159-历史接受率为：-0.5258176-链路资源利用率为：-0.36822432
+At time: 14511--- Process VNs: 1455;1456;1457;1458;1459;
+14511-当前接受的虚拟网络数为-1455;1456;1457;1458;-total fitness is:-27317.11-total cost is-13011.986-benifit-cost ratio is:-0.47633103-Node Utilization rate is:-0.24468905-历史接受率为：-0.5265866-链路资源利用率为：-0.4088785
+At time: 14561--- Process VNs: 1460;1461;1462;1463;1464;
+14561-当前接受的虚拟网络数为-1460;1461;1462;1463;1464;-total fitness is:-27443.81-total cost is-13078.6875-benifit-cost ratio is:-0.47656238-Node Utilization rate is:-0.26781404-历史接受率为：-0.52820516-链路资源利用率为：-0.42289722
+At time: 14611--- Process VNs: 1465;1466;1467;1468;
+14611-当前接受的虚拟网络数为-1465;1466;1467;1468;-total fitness is:-27478.014-total cost is-13107.389-benifit-cost ratio is:-0.47701368-Node Utilization rate is:-0.23906404-历史接受率为：-0.5294118-链路资源利用率为：-0.34672898
+At time: 14660--- Process VNs: 1469;1470;1471;1472;
+14660-当前接受的虚拟网络数为-1469;1471;1472;-total fitness is:-27596.115-total cost is-13161.489-benifit-cost ratio is:-0.47693267-Node Utilization rate is:-0.24531406-历史接受率为：-0.5297619-链路资源利用率为：-0.3714953
+At time: 14710--- Process VNs: 1473;1474;1475;1476;1477;1478;
+14710-当前接受的虚拟网络数为-1473;1474;1476;1477;-total fitness is:-27842.717-total cost is-13260.59-benifit-cost ratio is:-0.4762678-Node Utilization rate is:-0.26906407-历史接受率为：-0.5300593-链路资源利用率为：-0.4453271
+At time: 14759--- Process VNs: 1479;1480;1481;1482;1483;1484;
+14759-当前接受的虚拟网络数为-1479;1480;1481;1483;-total fitness is:-27881.32-total cost is-13287.69-benifit-cost ratio is:-0.47658038-Node Utilization rate is:-0.26937658-历史接受率为：-0.53035414-链路资源利用率为：-0.39742988
+At time: 14809--- Process VNs: 1485;1486;1487;1488;
+14809-当前接受的虚拟网络数为-1485;-total fitness is:-27881.322-total cost is-13287.691-benifit-cost ratio is:-0.47658038-Node Utilization rate is:-0.25843906-历史接受率为：-0.52901596-链路资源利用率为：-0.38621497
+At time: 14858--- Process VNs: 1489;1490;1491;1492;1493;1494;
+14858-当前接受的虚拟网络数为-1489;1490;1491;1494;-total fitness is:-28045.324-total cost is-13358.193-benifit-cost ratio is:-0.47630733-Node Utilization rate is:-0.26843905-历史接受率为：-0.5293132-链路资源利用率为：-0.42383176
+At time: 14908--- Process VNs: 1495;1496;1497;1498;1499;1500;
+14908-当前接受的虚拟网络数为-1495;1496;1499;1500;-total fitness is:-28265.227-total cost is-13438.595-benifit-cost ratio is:-0.4754462-Node Utilization rate is:-0.26906407-历史接受率为：-0.529608-链路资源利用率为：-0.46752334
+At time: 14957--- Process VNs: 1501;1502;1503;1504;
+14957-当前接受的虚拟网络数为-1501;1503;1504;-total fitness is:-28284.828-total cost is-13453.696-benifit-cost ratio is:-0.47565064-Node Utilization rate is:-0.27312654-历史接受率为：-0.5299501-链路资源利用率为：-0.45654207
+At time: 15007--- Process VNs: 1505;1506;1507;1508;
+15007-当前接受的虚拟网络数为-1505;1508;-total fitness is:-28293.13-total cost is-13460.997-benifit-cost ratio is:-0.4757691-Node Utilization rate is:-0.27156407-历史接受率为：-0.5294606-链路资源利用率为：-0.45163554
+At time: 15056--- Process VNs: 1509;1510;1511;1512;1513;
+15056-当前接受的虚拟网络数为-1509;1511;1513;-total fitness is:-28347.232-total cost is-13498.098-benifit-cost ratio is:-0.47616985-Node Utilization rate is:-0.26531404-历史接受率为：-0.5293631-链路资源利用率为：-0.44929904
+At time: 15106--- Process VNs: 1514;1515;1516;1517;1518;1519;
+15106-当前接受的虚拟网络数为-1514;1519;-total fitness is:-28399.635-total cost is-13518.499-benifit-cost ratio is:-0.4760096-Node Utilization rate is:-0.26093906-历史接受率为：-0.5280066-链路资源利用率为：-0.4626168
+At time: 15155--- Process VNs: 1520;1521;1522;1523;
+15155-当前接受的虚拟网络数为-1520;1521;1523;-total fitness is:-28443.137-total cost is-13542.0-benifit-cost ratio is:-0.47610784-Node Utilization rate is:-0.25468904-历史接受率为：-0.5283484-链路资源利用率为：-0.43995327
+At time: 15205--- Process VNs: 1524;1525;1526;1527;1528;
+15205-当前接受的虚拟网络数为-1524;-total fitness is:-28443.139-total cost is-13542.001-benifit-cost ratio is:-0.47610784-Node Utilization rate is:-0.22812659-历史接受率为：-0.5266175-链路资源利用率为：-0.37733644
+At time: 15255--- Process VNs: 1529;1530;1531;1532;1533;1534;
+15255-当前接受的虚拟网络数为-1529;1530;1531;1532;1534;-total fitness is:-28641.242-total cost is-13637.103-benifit-cost ratio is:-0.47613516-Node Utilization rate is:-0.27125156-历史接受率为：-0.5277325-链路资源利用率为：-0.44813085
+At time: 15304--- Process VNs: 1535;1536;1537;1538;1539;1540;
+15304-当前接受的虚拟网络数为-1535;1538;1539;-total fitness is:-28775.844-total cost is-13697.204-benifit-cost ratio is:-0.4759966-Node Utilization rate is:-0.26281404-历史接受率为：-0.52721363-链路资源利用率为：-0.45630842
+At time: 15354--- Process VNs: 1541;1542;1543;1544;1545;
+15354-当前接受的虚拟网络数为-1541;1544;-total fitness is:-28833.045-total cost is-13718.405-benifit-cost ratio is:-0.4757876-Node Utilization rate is:-0.27093905-历史接受率为：-0.5263158-链路资源利用率为：-0.47686917
+At time: 15403--- Process VNs: 1546;1547;1548;1549;
+15403-当前接受的虚拟网络数为-1546;1547;-total fitness is:-28868.746-total cost is-13737.106-benifit-cost ratio is:-0.475847-Node Utilization rate is:-0.27906406-历史接受率为：-0.52584815-链路资源利用率为：-0.49112147
+At time: 15453--- Process VNs: 1550;1551;1552;1553;1554;1555;
+15453-当前接受的虚拟网络数为-1550;1553;1555;-total fitness is:-28897.648-total cost is-13759.507-benifit-cost ratio is:-0.47614625-Node Utilization rate is:-0.24781406-历史接受率为：-0.5253419-链路资源利用率为：-0.45584112
+At time: 15502--- Process VNs: 1556;1557;1558;1559;1560;1561;
+15502-当前接受的虚拟网络数为-1556;1557;1558;1560;-total fitness is:-28961.95-total cost is-13803.309-benifit-cost ratio is:-0.4766015-Node Utilization rate is:-0.25906408-历史接受率为：-0.525641-链路资源利用率为：-0.44158876
+At time: 15552--- Process VNs: 1562;1563;1564;1565;1566;
+15552-当前接受的虚拟网络数为-1562;1563;1564;1566;-total fitness is:-29070.55-total cost is-13849.91-benifit-cost ratio is:-0.47642407-Node Utilization rate is:-0.26906407-历史接受率为：-0.5263578-链路资源利用率为：-0.460514
+At time: 15602--- Process VNs: 1567;1568;1569;1570;1571;1572;
+15602-当前接受的虚拟网络数为-1567;1568;1570;1571;1572;-total fitness is:-29326.752-total cost is-13958.61-benifit-cost ratio is:-0.4759685-Node Utilization rate is:-0.2778141-历史接受率为：-0.5274463-链路资源利用率为：-0.48668224
+At time: 15651--- Process VNs: 1573;1574;1575;1576;1577;1578;
+15651-当前接受的虚拟网络数为-1573;1574;1575;1576;1577;1578;-total fitness is:-29541.953-total cost is-14061.811-benifit-cost ratio is:-0.47599462-Node Utilization rate is:-0.3062516-历史接受率为：-0.5293186-链路资源利用率为：-0.5084112
+At time: 15701--- Process VNs: 1579;1580;1581;1582;
+15701-当前接受的虚拟网络数为-1579;1580;-total fitness is:-29613.955-total cost is-14096.312-benifit-cost ratio is:-0.47600234-Node Utilization rate is:-0.29781407-历史接受率为：-0.5288538-链路资源利用率为：-0.503271
+At time: 15750--- Process VNs: 1583;1584;1585;1586;1587;
+15750-当前接受的虚拟网络数为-1583;1584;-total fitness is:-29643.457-total cost is-14115.8125-benifit-cost ratio is:-0.47618645-Node Utilization rate is:-0.29937655-历史接受率为：-0.5279748-链路资源利用率为：-0.4964953
+At time: 15800--- Process VNs: 1588;1589;1590;1591;1592;
+15800-当前接受的虚拟网络数为-1588;1590;-total fitness is:-29661.459-total cost is-14126.313-benifit-cost ratio is:-0.47625148-Node Utilization rate is:-0.28343904-历史接受率为：-0.52710134-链路资源利用率为：-0.47196263
+At time: 15849--- Process VNs: 1593;1594;1595;1596;
+15849-当前接受的虚拟网络数为-1593;1595;1596;-total fitness is:-29738.361-total cost is-14164.715-benifit-cost ratio is:-0.4763112-Node Utilization rate is:-0.30593908-历史接受率为：-0.52742946-链路资源利用率为：-0.49719626
+At time: 15898--- Process VNs: 1597;1598;1599;1600;
+15898-当前接受的虚拟网络数为-1597;1598;1599;1600;-total fitness is:-29813.562-total cost is-14212.416-benifit-cost ratio is:-0.47670975-Node Utilization rate is:-0.29156405-历史接受率为：-0.5285379-链路资源利用率为：-0.42523366
+At time: 15948--- Process VNs: 1601;1602;1603;1604;1605;
+15948-当前接受的虚拟网络数为-1601;1602;1605;-total fitness is:-29845.564-total cost is-14233.917-benifit-cost ratio is:-0.476919-Node Utilization rate is:-0.2881266-历史接受率为：-0.52844894-链路资源利用率为：-0.39042056
+At time: 15998--- Process VNs: 1606;1607;1608;1609;1610;
+15998-当前接受的虚拟网络数为-1606;1609;1610;-total fitness is:-29964.066-total cost is-14291.418-benifit-cost ratio is:-0.4769519-Node Utilization rate is:-0.30687654-历史接受率为：-0.52836055-链路资源利用率为：-0.43878508
+At time: 16047--- Process VNs: 1611;1612;1613;1614;1615;1616;
+16047-当前接受的虚拟网络数为-1611;1612;1613;1615;1616;-total fitness is:-30045.87-total cost is-14346.219-benifit-cost ratio is:-0.47747725-Node Utilization rate is:-0.28218907-历史接受率为：-0.5294118-链路资源利用率为：-0.33738315
+At time: 16096--- Process VNs: 1617;1618;1619;1620;
+16096-当前接受的虚拟网络数为-1617;1618;1619;1620;-total fitness is:-30142.271-total cost is-14399.119-benifit-cost ratio is:-0.47770518-Node Utilization rate is:-0.29531407-历史接受率为：-0.5305019-链路资源利用率为：-0.3593458
+At time: 16146--- Process VNs: 1621;1622;1623;1624;1625;1626;
+16146-当前接受的虚拟网络数为-1621;1624;1625;1626;-total fitness is:-30334.473-total cost is-14492.319-benifit-cost ratio is:-0.47775084-Node Utilization rate is:-0.32875156-历史接受率为：-0.5307692-链路资源利用率为：-0.42570096
+At time: 16196--- Process VNs: 1627;1628;1629;1630;1631;
+16196-当前接受的虚拟网络数为-1627;1629;-total fitness is:-30398.775-total cost is-14520.12-benifit-cost ratio is:-0.47765478-Node Utilization rate is:-0.28531408-历史接受率为：-0.529908-链路资源利用率为：-0.432243
+At time: 16246--- Process VNs: 1632;1633;1634;1635;
+16246-当前接受的虚拟网络数为-1632;1633;1635;-total fitness is:-30487.576-total cost is-14568.921-benifit-cost ratio is:-0.47786418-Node Utilization rate is:-0.31093907-历史接受率为：-0.5302219-链路资源利用率为：-0.4614486
+At time: 16295--- Process VNs: 1636;1637;1638;1639;
+16295-当前接受的虚拟网络数为-1636;1637;-total fitness is:-30532.277-total cost is-14591.122-benifit-cost ratio is:-0.4778917-Node Utilization rate is:-0.29750156-历史接受率为：-0.529771-链路资源利用率为：-0.4130841
+At time: 16344--- Process VNs: 1640;1641;1642;1643;1644;
+16344-当前接受的虚拟网络数为-1640;1643;1644;-total fitness is:-30581.68-total cost is-14622.522-benifit-cost ratio is:-0.4781465-Node Utilization rate is:-0.30562657-历史接受率为：-0.5296804-链路资源利用率为：-0.41682243
+At time: 16394--- Process VNs: 1645;1646;1647;1648;1649;
+16394-当前接受的虚拟网络数为-1645;1646;1647;1648;1649;-total fitness is:-30864.682-total cost is-14754.022-benifit-cost ratio is:-0.47802284-Node Utilization rate is:-0.31187654-历史接受率为：-0.5311077-链路资源利用率为：-0.4275701
+At time: 16444--- Process VNs: 1650;1651;1652;1653;
+16444-当前接受的虚拟网络数为-1650;1652;1653;-total fitness is:-30988.084-total cost is-14813.423-benifit-cost ratio is:-0.4780361-Node Utilization rate is:-0.32093906-历史接受率为：-0.5314156-链路资源利用率为：-0.4488318
+At time: 16494--- Process VNs: 1654;1655;1656;1657;1658;
+16494-当前接受的虚拟网络数为-1654;-total fitness is:-30988.086-total cost is-14813.424-benifit-cost ratio is:-0.4780361-Node Utilization rate is:-0.32093906-历史接受率为：-0.5298113-链路资源利用率为：-0.4488318
+At time: 16544--- Process VNs: 1659;1660;1661;1662;1663;
+16544-当前接受的虚拟网络数为-1659;-total fitness is:-30988.088-total cost is-14813.425-benifit-cost ratio is:-0.4780361-Node Utilization rate is:-0.28937656-历史接受率为：-0.5282167-链路资源利用率为：-0.41658878
+At time: 16593--- Process VNs: 1664;1665;1666;1667;
+16593-当前接受的虚拟网络数为-1664;1665;1666;-total fitness is:-31067.49-total cost is-14856.326-benifit-cost ratio is:-0.47819525-Node Utilization rate is:-0.29562658-历史接受率为：-0.5285285-链路资源利用率为：-0.41542053
+At time: 16642--- Process VNs: 1668;1669;1670;1671;1672;
+16642-当前接受的虚拟网络数为-1668;1671;1672;-total fitness is:-31143.293-total cost is-14891.627-benifit-cost ratio is:-0.47816482-Node Utilization rate is:-0.28781408-历史接受率为：-0.5284431-链路资源利用率为：-0.41004676
+At time: 16692--- Process VNs: 1673;1674;1675;1676;1677;1678;
+16692-当前接受的虚拟网络数为-1673;1675;1676;1678;-total fitness is:-31281.295-total cost is-14955.128-benifit-cost ratio is:-0.4780853-Node Utilization rate is:-0.24375159-历史接受率为：-0.5287099-链路资源利用率为：-0.39042056
+At time: 16741--- Process VNs: 1679;1680;1681;1682;1683;
+16741-当前接受的虚拟网络数为-1679;1681;-total fitness is:-31326.098-total cost is-14976.929-benifit-cost ratio is:-0.4780975-Node Utilization rate is:-0.23343909-历史接受率为：-0.527881-链路资源利用率为：-0.38177568
+At time: 16790--- Process VNs: 1684;1685;1686;1687;1688;
+16790-当前接受的虚拟网络数为-1684;1685;-total fitness is:-31461.5-total cost is-15024.83-benifit-cost ratio is:-0.47756243-Node Utilization rate is:-0.23281407-历史接受率为：-0.52705705-链路资源利用率为：-0.42897195
+At time: 16840--- Process VNs: 1689;1690;1691;1692;
+16840-当前接受的虚拟网络数为-1689;1690;1691;-total fitness is:-31501.3-total cost is-15051.631-benifit-cost ratio is:-0.47780982-Node Utilization rate is:-0.22218907-历史接受率为：-0.5273669-链路资源利用率为：-0.41074765
+At time: 16889--- Process VNs: 1693;1694;1695;1696;1697;
+16889-当前接受的虚拟网络数为-1693;1694;1697;-total fitness is:-31521.303-total cost is-15068.632-benifit-cost ratio is:-0.47804597-Node Utilization rate is:-0.22468907-历史接受率为：-0.5272861-链路资源利用率为：-0.39205605
+At time: 16939--- Process VNs: 1698;1699;1700;1701;1702;1703;
+16939-当前接受的虚拟网络数为-1698;1699;1703;-total fitness is:-31602.906-total cost is-15104.732-benifit-cost ratio is:-0.4779539-Node Utilization rate is:-0.23250157-历史接受率为：-0.5268185-链路资源利用率为：-0.40186918
+At time: 16988--- Process VNs: 1704;1705;1706;1707;
+16988-当前接受的虚拟网络数为-1704;1705;-total fitness is:-31611.908-total cost is-15113.733-benifit-cost ratio is:-0.47810254-Node Utilization rate is:-0.24187654-历史接受率为：-0.52639294-链路资源利用率为：-0.40327102
+At time: 17038--- Process VNs: 1708;1709;1710;1711;1712;
+17038-当前接受的虚拟网络数为-1708;1709;1711;1712;-total fitness is:-31768.611-total cost is-15189.934-benifit-cost ratio is:-0.47814283-Node Utilization rate is:-0.25343907-历史接受率为：-0.5270468-链路资源利用率为：-0.42289722
+At time: 17087--- Process VNs: 1713;1714;1715;1716;
+17087-当前接受的虚拟网络数为-1713;-total fitness is:-31768.613-total cost is-15189.935-benifit-cost ratio is:-0.47814283-Node Utilization rate is:-0.25343907-历史接受率为：-0.5258935-链路资源利用率为：-0.42289722
+At time: 17136--- Process VNs: 1717;1718;1719;1720;1721;
+17136-当前接受的虚拟网络数为-1717;1720;-total fitness is:-31797.615-total cost is-15202.436-benifit-cost ratio is:-0.47809985-Node Utilization rate is:-0.26125157-历史接受率为：-0.52509093-链路资源利用率为：-0.4327103
+At time: 17186--- Process VNs: 1722;1723;1724;1725;1726;1727;
+17186-当前接受的虚拟网络数为-1722;1723;1725;-total fitness is:-31850.416-total cost is-15237.236-benifit-cost ratio is:-0.4783999-Node Utilization rate is:-0.2828141-历史接受率为：-0.5246377-链路资源利用率为：-0.45023364
+At time: 17235--- Process VNs: 1728;1729;1730;1731;1732;
+17235-当前接受的虚拟网络数为-1728;1730;1731;1732;-total fitness is:-31947.818-total cost is-15289.638-benifit-cost ratio is:-0.47858158-Node Utilization rate is:-0.28343904-历史接受率为：-0.525289-链路资源利用率为：-0.41892523
+At time: 17284--- Process VNs: 1733;1734;1735;1736;1737;1738;
+17284-当前接受的虚拟网络数为-1733;1734;1735;1736;1738;-total fitness is:-32187.72-total cost is-15394.538-benifit-cost ratio is:-0.47827363-Node Utilization rate is:-0.30531406-历史接受率为：-0.5262779-链路资源利用率为：-0.46495324
+At time: 17334--- Process VNs: 1739;1740;1741;1742;1743;1744;
+17334-当前接受的虚拟网络数为-1739;1741;1743;-total fitness is:-32339.021-total cost is-15461.339-benifit-cost ratio is:-0.47810164-Node Utilization rate is:-0.28218907-历史接受率为：-0.52582496-链路资源利用率为：-0.47803736
+At time: 17383--- Process VNs: 1745;1746;1747;1748;1749;
+17383-当前接受的虚拟网络数为-1745;1749;-total fitness is:-32353.223-total cost is-15473.54-benifit-cost ratio is:-0.4782689-Node Utilization rate is:-0.27031404-历史接受率为：-0.52503574-链路资源利用率为：-0.4448598
+At time: 17432--- Process VNs: 1750;1751;1752;1753;1754;1755;
+17432-当前接受的虚拟网络数为-1750;1752;1753;1754;-total fitness is:-32433.125-total cost is-15516.941-benifit-cost ratio is:-0.4784288-Node Utilization rate is:-0.26406407-历史接受率为：-0.52530295-链路资源利用率为：-0.43878508
+At time: 17481--- Process VNs: 1756;1757;1758;1759;
+17481-当前接受的虚拟网络数为-1756;1758;-total fitness is:-32502.627-total cost is-15544.942-benifit-cost ratio is:-0.47826725-Node Utilization rate is:-0.26906407-历史接受率为：-0.52489334-链路资源利用率为：-0.45350468
+At time: 17531--- Process VNs: 1760;1761;1762;1763;1764;1765;
+17531-当前接受的虚拟网络数为-1760;1761;1763;1765;-total fitness is:-32612.93-total cost is-15594.743-benifit-cost ratio is:-0.4781767-Node Utilization rate is:-0.28906405-历史接受率为：-0.5251595-链路资源利用率为：-0.4939252
+At time: 17580--- Process VNs: 1766;1767;1768;1769;
+17580-当前接受的虚拟网络数为-1766;1769;-total fitness is:-32673.531-total cost is-15617.844-benifit-cost ratio is:-0.4779968-Node Utilization rate is:-0.26750153-历史接受率为：-0.5247525-链路资源利用率为：-0.47990656
+At time: 17630--- Process VNs: 1770;1771;1772;1773;1774;1775;
+17630-当前接受的虚拟网络数为-1770;1771;1772;-total fitness is:-32760.633-total cost is-15658.945-benifit-cost ratio is:-0.47798055-Node Utilization rate is:-0.2568766-历史接受率为：-0.5243129-链路资源利用率为：-0.43878508
+At time: 17679--- Process VNs: 1776;1777;1778;1779;
+17679-当前接受的虚拟网络数为-1776;1777;1778;-total fitness is:-32853.137-total cost is-15716.946-benifit-cost ratio is:-0.47840017-Node Utilization rate is:-0.27031404-历史接受率为：-0.5246132-链路资源利用率为：-0.41331774
+At time: 17729--- Process VNs: 1780;1781;1782;1783;1784;
+17729-当前接受的虚拟网络数为-1780;1782;1783;-total fitness is:-32928.74-total cost is-15758.047-benifit-cost ratio is:-0.47855-Node Utilization rate is:-0.2671891-历史接受率为：-0.5245442-链路资源利用率为：-0.42570096
+At time: 17779--- Process VNs: 1785;1786;1787;1788;1789;1790;
+17779-当前接受的虚拟网络数为-1785;1786;1790;-total fitness is:-33032.94-total cost is-15805.247-benifit-cost ratio is:-0.47846925-Node Utilization rate is:-0.29250157-历史接受率为：-0.524109-链路资源利用率为：-0.4614486
+At time: 17828--- Process VNs: 1791;1792;1793;1794;1795;1796;
+17828-当前接受的虚拟网络数为-1791;1793;1795;-total fitness is:-33077.242-total cost is-15834.548-benifit-cost ratio is:-0.47871426-Node Utilization rate is:-0.3012516-历史接受率为：-0.5236769-链路资源利用率为：-0.4600467
+At time: 17877--- Process VNs: 1797;1798;1799;1800;1801;
+17877-当前接受的虚拟网络数为-1797;-total fitness is:-33077.242-total cost is-15834.549-benifit-cost ratio is:-0.4787143-Node Utilization rate is:-0.3012516-历史接受率为：-0.5222222-链路资源利用率为：-0.4600467
+At time: 17926--- Process VNs: 1802;1803;1804;1805;
+17926-当前接受的虚拟网络数为-1802;1803;-total fitness is:-33090.742-total cost is-15843.05-benifit-cost ratio is:-0.4787759-Node Utilization rate is:-0.30093908-历史接受率为：-0.52182955-链路资源利用率为：-0.45981306
+At time: 17976--- Process VNs: 1806;1807;1808;1809;1810;
+17976-当前接受的虚拟网络数为-1806;-total fitness is:-33090.742-total cost is-15843.051-benifit-cost ratio is:-0.47877592-Node Utilization rate is:-0.2934391-历史接受率为：-0.520387-链路资源利用率为：-0.44065422
+At time: 18025--- Process VNs: 1811;1812;1813;1814;
+18025-当前接受的虚拟网络数为-1811;1813;-total fitness is:-33120.14-total cost is-15859.452-benifit-cost ratio is:-0.47884616-Node Utilization rate is:-0.25093907-历史接受率为：-0.52-链路资源利用率为：-0.38574767
+At time: 18074--- Process VNs: 1815;1816;1817;1818;1819;1820;
+18074-当前接受的虚拟网络数为-1815;1817;1818;1819;-total fitness is:-33256.64-total cost is-15923.453-benifit-cost ratio is:-0.4788052-Node Utilization rate is:-0.25250155-历史接受率为：-0.52027494-链路资源利用率为：-0.39813083
+At time: 18123--- Process VNs: 1821;1822;1823;1824;
+18123-当前接受的虚拟网络数为-1821;1822;1823;-total fitness is:-33360.04-total cost is-15964.3545-benifit-cost ratio is:-0.47854725-Node Utilization rate is:-0.26500154-历史接受率为：-0.5205761-链路资源利用率为：-0.4098131
+At time: 18173--- Process VNs: 1825;1826;1827;1828;1829;1830;
+18173-当前接受的虚拟网络数为-1825;1826;1827;1829;1830;-total fitness is:-33528.34-total cost is-16050.155-benifit-cost ratio is:-0.47870415-Node Utilization rate is:-0.26687658-历史接受率为：-0.5215311-链路资源利用率为：-0.41845793
+At time: 18222--- Process VNs: 1831;1832;1833;1834;1835;1836;
+18222-当前接受的虚拟网络数为-1831;1832;1835;1836;-total fitness is:-33718.938-total cost is-16125.757-benifit-cost ratio is:-0.47824037-Node Utilization rate is:-0.29906404-历史接受率为：-0.5217984-链路资源利用率为：-0.49462616
+At time: 18272--- Process VNs: 1837;1838;1839;1840;
+18272-当前接受的虚拟网络数为-1837;1839;-total fitness is:-33737.137-total cost is-16133.458-benifit-cost ratio is:-0.47821066-Node Utilization rate is:-0.26531404-历史接受率为：-0.521414-链路资源利用率为：-0.42850465
+At time: 18321--- Process VNs: 1841;1842;1843;1844;1845;
+18321-当前接受的虚拟网络数为-1841;1844;-total fitness is:-33748.24-total cost is-16144.559-benifit-cost ratio is:-0.47838226-Node Utilization rate is:-0.24406403-历史接受率为：-0.520678-链路资源利用率为：-0.3801402
+At time: 18370--- Process VNs: 1846;1847;1848;1849;1850;
+18370-当前接受的虚拟网络数为-1846;1848;1849;1850;-total fitness is:-34019.137-total cost is-16258.46-benifit-cost ratio is:-0.477921-Node Utilization rate is:-0.25062656-历史接受率为：-0.52129817-链路资源利用率为：-0.42429906
+At time: 18420--- Process VNs: 1851;1852;1853;1854;1855;1856;
+18420-当前接受的虚拟网络数为-1851;1852;1853;-total fitness is:-34134.938-total cost is-16299.761-benifit-cost ratio is:-0.47750962-Node Utilization rate is:-0.25062656-历史接受率为：-0.52088946-链路资源利用率为：-0.43925232
+At time: 18469--- Process VNs: 1857;1858;1859;1860;
+18469-当前接受的虚拟网络数为-1857;1859;-total fitness is:-34163.137-total cost is-16313.462-benifit-cost ratio is:-0.4775165-Node Utilization rate is:-0.24875158-历史接受率为：-0.5205111-链路资源利用率为：-0.44556075
+At time: 18519--- Process VNs: 1861;1862;1863;1864;1865;
+18519-当前接受的虚拟网络数为-1861;1864;-total fitness is:-34205.535-total cost is-16333.863-benifit-cost ratio is:-0.47752106-Node Utilization rate is:-0.2568766-历史接受率为：-0.5197854-链路资源利用率为：-0.45303738
+At time: 18568--- Process VNs: 1866;1867;1868;1869;1870;
+18568-当前接受的虚拟网络数为-1866;1867;1868;-total fitness is:-34320.938-total cost is-16371.264-benifit-cost ratio is:-0.47700515-Node Utilization rate is:-0.27468908-历史接受率为：-0.5197324-链路资源利用率为：-0.50163555
+At time: 18617--- Process VNs: 1871;1872;1873;1874;
+18617-当前接受的虚拟网络数为-1871;1872;-total fitness is:-34357.24-total cost is-16389.064-benifit-cost ratio is:-0.47701925-Node Utilization rate is:-0.24312657-历史接受率为：-0.5193592-链路资源利用率为：-0.45443922
+At time: 18667--- Process VNs: 1875;1876;1877;1878;
+18667-当前接受的虚拟网络数为-1875;1876;1878;-total fitness is:-34425.34-total cost is-16428.668-benifit-cost ratio is:-0.47722602-Node Utilization rate is:-0.21468908-历史接受率为：-0.51965356-链路资源利用率为：-0.39392525
+At time: 18716--- Process VNs: 1879;1880;1881;1882;1883;1884;
+18716-当前接受的虚拟网络数为-1879;1880;1884;-total fitness is:-34558.74-total cost is-16488.57-benifit-cost ratio is:-0.47711724-Node Utilization rate is:-0.22375154-历史接受率为：-0.5192563-链路资源利用率为：-0.4443925
+At time: 18766--- Process VNs: 1885;1886;1887;1888;
+18766-当前接受的虚拟网络数为-1885;-total fitness is:-34558.74-total cost is-16488.572-benifit-cost ratio is:-0.4771173-Node Utilization rate is:-0.19500154-历史接受率为：-0.518224-链路资源利用率为：-0.3890187
+At time: 18815--- Process VNs: 1889;1890;1891;1892;1893;1894;
+18815-当前接受的虚拟网络数为-1889;1890;1891;1892;-total fitness is:-34663.742-total cost is-16549.074-benifit-cost ratio is:-0.4774174-Node Utilization rate is:-0.18968904-历史接受率为：-0.51849407-链路资源利用率为：-0.36074764
+At time: 18865--- Process VNs: 1895;1896;1897;1898;1899;1900;
+18865-当前接受的虚拟网络数为-1895;1896;1897;1898;-total fitness is:-34825.14-total cost is-16617.477-benifit-cost ratio is:-0.47716898-Node Utilization rate is:-0.22312659-历史接受率为：-0.51876235-链路资源利用率为：-0.42126167
+At time: 18914--- Process VNs: 1901;1902;1903;1904;1905;
+18914-当前接受的虚拟网络数为-1901;1902;1904;-total fitness is:-34900.14-total cost is-16649.979-benifit-cost ratio is:-0.47707483-Node Utilization rate is:-0.23718905-历史接受率为：-0.51871306-链路资源利用率为：-0.4448598
+At time: 18964--- Process VNs: 1906;1907;1908;1909;1910;1911;
+18964-当前接受的虚拟网络数为-1906;1908;1910;-total fitness is:-34971.84-total cost is-16682.182-benifit-cost ratio is:-0.47701755-Node Utilization rate is:-0.24625158-历史接受率为：-0.5183246-链路资源利用率为：-0.4600467
+At time: 19013--- Process VNs: 1912;1913;1914;1915;1916;
+19013-当前接受的虚拟网络数为-1912;1914;-total fitness is:-35046.84-total cost is-16717.684-benifit-cost ratio is:-0.47700974-Node Utilization rate is:-0.22125155-历史接受率为：-0.517624-链路资源利用率为：-0.44205606
+At time: 19062--- Process VNs: 1917;1918;1919;1920;1921;
+19062-当前接受的虚拟网络数为-1917;1918;1919;1920;1921;-total fitness is:-35142.54-total cost is-16775.885-benifit-cost ratio is:-0.4773669-Node Utilization rate is:-0.24656409-历史接受率为：-0.5188802-链路资源利用率为：-0.44649535
+At time: 19112--- Process VNs: 1922;1923;1924;1925;
+19112-当前接受的虚拟网络数为-1922;1923;-total fitness is:-35175.64-total cost is-16795.986-benifit-cost ratio is:-0.47748914-Node Utilization rate is:-0.23593909-历史接受率为：-0.5185185-链路资源利用率为：-0.41775703
+At time: 19161--- Process VNs: 1926;1927;1928;1929;1930;1931;
+19161-当前接受的虚拟网络数为-1926;1928;1929;1931;-total fitness is:-35333.043-total cost is-16862.889-benifit-cost ratio is:-0.4772555-Node Utilization rate is:-0.24531406-历史接受率为：-0.5187824-链路资源利用率为：-0.4457944
+At time: 19210--- Process VNs: 1932;1933;1934;1935;1936;1937;
+19210-当前接受的虚拟网络数为-1932;1934;1937;-total fitness is:-35510.14-total cost is-16937.99-benifit-cost ratio is:-0.47699022-Node Utilization rate is:-0.2543766-历史接受率为：-0.51839894-链路资源利用率为：-0.45584112
+At time: 19260--- Process VNs: 1938;1939;1940;1941;1942;1943;
+19260-当前接受的虚拟网络数为-1938;1940;1942;1943;-total fitness is:-35665.04-total cost is-16999.393-benifit-cost ratio is:-0.47664022-Node Utilization rate is:-0.24593908-历史接受率为：-0.5186615-链路资源利用率为：-0.4436916
+At time: 19309--- Process VNs: 1944;1945;1946;1947;1948;1949;
+19309-当前接受的虚拟网络数为-1944;1945;1947;-total fitness is:-35731.938-total cost is-17029.793-benifit-cost ratio is:-0.47659865-Node Utilization rate is:-0.2515641-历史接受率为：-0.5182809-链路资源利用率为：-0.45841122
+At time: 19359--- Process VNs: 1950;1951;1952;1953;1954;1955;
+19359-当前接受的虚拟网络数为-1950;1952;1953;1954;-total fitness is:-35910.938-total cost is-17098.295-benifit-cost ratio is:-0.47613057-Node Utilization rate is:-0.27531403-历史接受率为：-0.5185422-链路资源利用率为：-0.5074766
+At time: 19408--- Process VNs: 1956;1957;1958;1959;1960;1961;
+19408-当前接受的虚拟网络数为-1956;1957;1960;1961;-total fitness is:-36087.04-total cost is-17176.398-benifit-cost ratio is:-0.4759714-Node Utilization rate is:-0.26656407-历史接受率为：-0.5188018-链路资源利用率为：-0.4792056
+At time: 19457--- Process VNs: 1962;1963;1964;1965;
+19457-当前接受的虚拟网络数为-1962;1963;1964;1965;-total fitness is:-36201.836-total cost is-17228.201-benifit-cost ratio is:-0.47589302-Node Utilization rate is:-0.25531405-历史接受率为：-0.5197201-链路资源利用率为：-0.4271028
+At time: 19507--- Process VNs: 1966;1967;1968;1969;
+19507-当前接受的虚拟网络数为-1966;-total fitness is:-36201.836-total cost is-17228.203-benifit-cost ratio is:-0.47589308-Node Utilization rate is:-0.24375159-历史接受率为：-0.51873016-链路资源利用率为：-0.41518694
+At time: 19556--- Process VNs: 1970;1971;1972;1973;1974;1975;
+19556-当前接受的虚拟网络数为-1970;1972;1973;-total fitness is:-36304.035-total cost is-17268.906-benifit-cost ratio is:-0.47567457-Node Utilization rate is:-0.25281405-历史接受率为：-0.5183544-链路资源利用率为：-0.4483645
+At time: 19606--- Process VNs: 1976;1977;1978;1979;
+19606-当前接受的虚拟网络数为-1976;1978;-total fitness is:-36341.137-total cost is-17290.508-benifit-cost ratio is:-0.47578335-Node Utilization rate is:-0.23406404-历史接受率为：-0.51800376-链路资源利用率为：-0.43995327
+At time: 19655--- Process VNs: 1980;1981;1982;1983;1984;1985;
+19655-当前接受的虚拟网络数为-1980;1981;1984;-total fitness is:-36505.035-total cost is-17351.908-benifit-cost ratio is:-0.47532916-Node Utilization rate is:-0.24375159-历史接受率为：-0.51763225-链路资源利用率为：-0.49228972
+At time: 19704--- Process VNs: 1986;1987;1988;1989;
+19704-当前接受的虚拟网络数为-1986;1989;-total fitness is:-36599.836-total cost is-17379.71-benifit-cost ratio is:-0.47485763-Node Utilization rate is:-0.22968906-历史接受率为：-0.51728475-链路资源利用率为：-0.4609813
+At time: 19754--- Process VNs: 1990;1991;1992;1993;1994;1995;
+19754-当前接受的虚拟网络数为-1990;1992;1993;-total fitness is:-36670.04-total cost is-17413.412-benifit-cost ratio is:-0.47486755-Node Utilization rate is:-0.22937655-历史接受率为：-0.5169173-链路资源利用率为：-0.47149533
+At time: 19803--- Process VNs: 1996;1997;1998;1999;
+19803-当前接受的虚拟网络数为-1996;1998;-total fitness is:-36735.74-total cost is-17437.613-benifit-cost ratio is:-0.4746771-Node Utilization rate is:-0.21156406-历史接受率为：-0.51657283-链路资源利用率为：-0.4422897
