@@ -41,6 +41,7 @@ class MonteCarloTree:
         self.nodes_available_for_mapping = {}
         self.C = C
         self.D = D
+        self.root_depth = 0
 
         for VGnode, VGcpu in self.network.VG.nodes.items():
             self.nodes_available_for_mapping[VGnode] = []
@@ -86,10 +87,10 @@ class MonteCarloTree:
         root_depth = node.depth
         while not self.check_whether_node_is_terminal(node):
             if self.check_whether_node_is_expandable(node):
-                # if node.N < 3 and node.depth>root_depth:
-                #     return node
-                # else:
-                #     return self.Expand(node)
+                #if node.N < 200 and node.depth>root_depth:
+                #    return node
+                #else:
+                #    return self.Expand(node)
                 return self.Expand(node)
             else:
                 if node.children != []:
@@ -159,7 +160,7 @@ class MonteCarloTree:
                 p=probabilities
             )
 
-        if policy == 'distance_bandwidth':
+        if policy == 'DB':
             if node.depth == 0:
                 return np.random.choice(node.untried_actions)
 
@@ -170,13 +171,49 @@ class MonteCarloTree:
             for SGnode in node.untried_actions:
                 distance[SGnode] = 0
                 for pre_vnode in self.vnodes:
+                    if node.mapping[pre_vnode] == None:
+                        break
                     if pre_vnode in cur_vnode_edges:
                         pre_snode = node.mapping[pre_vnode]
                         distance[SGnode] += self.distance[SGnode][pre_snode] * cur_vnode_edges[pre_vnode]
 
-            NR = 1 / (list(distance.values()) + 1)
+            NR = 1 / ( np.array(list(distance.values())) + 1.0)
             sigma = np.divide(NR, np.min(NR))
-            sigma = np.power(sigma, 1)
+            sigma = np.power(sigma, 3)
+            probabilities = np.divide(sigma, np.sum(sigma))
+
+            return np.random.choice(
+                list(distance.keys()),
+                p=probabilities
+            )
+
+        if policy == 'DBCPU':
+            if node.depth == 0:
+                cpu_list = list(map(lambda x: (self.network.SG.nodes[x] + 1) * (1 + np.sum(
+                    [self.network.SG.edges[x][i] for i in self.network.SG.edges[x]])), node.untried_actions))
+
+                NR = cpu_list
+                sigma = np.divide(NR, np.min(NR))
+                sigma = np.power(sigma, 3)
+                probabilities = np.divide(sigma, np.sum(sigma))
+                return np.random.choice(node.untried_actions, p=probabilities)
+
+            cur_vnode = self.vnodes[node.depth]
+            cur_vnode_edges = self.network.VG.edges[cur_vnode]
+            distance = {}
+
+            for SGnode in node.untried_actions:
+                distance[SGnode] = 0
+                for pre_vnode in self.vnodes:
+                    if node.mapping[pre_vnode] == None:
+                        break
+                    if pre_vnode in cur_vnode_edges:
+                        pre_snode = node.mapping[pre_vnode]
+                        distance[SGnode] += self.distance[SGnode][pre_snode] * cur_vnode_edges[pre_vnode]
+
+            NR = 1 / ( np.array(list(distance.values())) + 1.0)
+            sigma = np.divide(NR, np.min(NR))
+            sigma = np.power(sigma, 3)
             probabilities = np.divide(sigma, np.sum(sigma))
 
             return np.random.choice(
@@ -202,7 +239,7 @@ class MonteCarloTree:
     def Move(self, node, action):
         new_node = Node(
             depth=node.depth + 1,
-            mapping=node.mapping.copy(),
+            mapping=copy.deepcopy(node.mapping),
             parent=node
         )
         vnode = self.vnodes[new_node.depth - 1]
@@ -215,7 +252,7 @@ class MonteCarloTree:
         if node.depth == self.network.VG.node_num:
             return []
         vnode = self.vnodes[node.depth]
-        untried_actions = self.nodes_available_for_mapping[vnode].copy()
+        untried_actions = copy.deepcopy(self.nodes_available_for_mapping[vnode])
 
         for snode in node.mapping.values():
             if snode in untried_actions:
@@ -228,41 +265,73 @@ class MonteCarloTree:
         if node.children == []:
             return None
         values = []
+        UCBs = []
         for child in node.children:
             average_Q = child.Q / child.N
             UCB = np.sqrt(2 * np.log(node.N) / child.N)
-            variance = np.sqrt(
-                (child.Q2 - child.N * average_Q * average_Q + D) / child.N
-            )
-            if D:
+            UCBs.append(UCB)
+            if D!=0:
+                variance = np.sqrt(
+                    (child.Q2 - child.N * average_Q * average_Q + D) / child.N
+                )
                 values.append(average_Q + C * UCB + variance)
             else:
                 values.append(average_Q + C * UCB)
         best_child = node.children[np.argmax(values)]
+        # if C == 0:
+        #
+        #     print('N ',[i.N for i in node.children])
+        #     print('node', [i.mapping[self.vnodes[i.depth-1]] for i in node.children])
+        #     print('sort node',sorted([i.mapping[self.vnodes[i.depth-1]] for i in node.children]))
+        #     print('Q',values)
+        #     print('UCB',UCBs)
+        #     print(np.argmax(values))
+        #     print()
         return best_child
 
     # 返回更新
     def BackPropagate(self, node, reward):
+        #print('root depth',self.root_depth)
+
+
         while node is not None:
+            #print('cur depth = ', node.depth)
+            #print('add reward = ', reward)
+            #print('cur N = ',node.N)
+            #if node.N == 0:
+            #    print('average Q = ',node.Q)
+            #else:
+            #    print('average Q = ',node.Q/node.N)
+
             node.N += 1
             node.Q += reward
             node.Q2 += reward * reward
+            #print('added N = ',node.N)
+            #print('average Q = ',node.Q/node.N)
+            #print()
             node = node.parent
 
     # 搜索
     def UCTSearch(self, root, iter_times):
         root.untried_actions = self.get_legal_untried_actions(root)
+        self.root_depth = root.depth
+        failed_iter_num = 0
         for i in range(iter_times):
             # print('iteration = {}'.format(i))
             child_node = self.TreePolicy(root)
             # print('non leaf node = ',child_node.mapping)
             reward = self.Simulation(child_node)
+            if self.reward_policy == 'RC' and reward == 0:
+                failed_iter_num += 1
+                if failed_iter_num == int(iter_times * 0.2):
+                    return None
             self.BackPropagate(child_node, reward)
             # print('cur simulation reward = {}'.format(reward))
             # print(child_node.mapping)
             # print(child_node.parent.mapping)
             # print('average Q = {}'.format(child_node.parent.Q/child_node.parent.N))
             # print()
+
 
         best_child = self.SelectBestChild(root, C=0, D=0)
         return best_child
@@ -273,6 +342,7 @@ class MonteCarloTree:
         while not self.check_whether_node_is_terminal(node):
             node.untried_actions = self.get_legal_untried_actions(node)
             if node.untried_actions == []:
+                print('sb')
                 return -INF
             choosed_action = self.RollOut(node, policy=self.simulation_policy)
             node = self.Move(node, choosed_action)

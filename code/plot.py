@@ -1,5 +1,6 @@
 from matplotlib import pyplot as plt
 import pandas as pd
+import os
 import numpy as np
 
 # 显示所有列
@@ -11,49 +12,56 @@ pd.set_option('max_colwidth', 400)
 pd.set_option('expand_frame_repr', False)
 
 
-def plot(x, y,filepath,legend,marker):
-    result = pd.read_csv(filepath)
-
+def plot(x, y, filepath, legend, marker, interval = 50):
+    data = pd.read_csv(filepath)
+    data = data.loc[
+        data['time periods'] % interval == 0
+    ]
+    x = data[x]
+    y = data[y]
     plt.plot(
-        result[x],
-        result[y],
+        x,
+        y,
         label=legend,
         # marker=marker
     )
 
-def plot_on_one_iteration(filepath1,filepath2,filepath3,y):
 
-    markers = ['^', '.', 'p','+']
+def plot_on_one_iteration(root_dir, policies, y):
+    markers = ['^', '.', 'p', '+']
 
-    # time periods CPU
-    # # plt.figure(dpi=600)
-    plt.rc('font', family='Times New Roman',size=13)
+    # plt.figure(dpi=600)
+    plt.rc('font', family='Times New Roman', size=13)
     plt.grid(linestyle='--')
     plt.ylabel(y)
     plt.xlabel('time periods')
 
-    plot(
-        x='time periods',
-        y=y,
-        filepath=filepath1,
-        legend='VNE-SPMCTS',
-        marker=markers[0]
-    )
+    marker_id = 0
+    for policy in policies:
+        method = '{}_{}_{}_iteration{}_C{}_D{}'.format(
+            policy['simulation policy'], policy['expand policy'], policy['reward policy'], policy['iteration'],
+            policy['C'], policy['D']
+        )
+        filepath = os.path.join(
+            root_dir,
+            method + '.csv'
+        )
+        plot(
+            x='time periods',
+            y=y,
+            filepath=filepath,
+            legend=method,
+            marker=markers[0],
+            interval = 200
+        )
+        marker_id += 1
 
     plot(
         x='time periods',
         y=y,
-        filepath=filepath2,
-        legend='MaVEn-S',
-        marker=markers[1]
-    )
-
-    plot(
-        x='time periods',
-        y=y,
-        filepath=filepath3,
+        filepath=os.path.join(root_dir, 'VNE-UEPSO.csv'),
         legend='VNE-UEPSO',
-        marker=markers[2]
+        marker=markers[0]
     )
 
     plt.legend()
@@ -62,85 +70,163 @@ def plot_on_one_iteration(filepath1,filepath2,filepath3,y):
     plt.show()
 
 
-
-def plot_on_different_iterations(filepath,policies,x_name,y_name):
-    data = pd.read_csv(filepath)
+def plot_on_different_iterations(root_dir, policies, iterations, x_name, y_name):
     # plt.figure(dpi=600)
-    plt.rc('font', family='Times New Roman',size=13)
+    plt.rc('font', family='Times New Roman', size=13)
     plt.xlabel('number of iterations')
     # plt.ylabel('average physical node utilization')
     plt.ylabel(y_name)
-    i = 0
-    markers = ['^','.','p']
+
+    marker_id = 0
+    markers = ['^', '.', 'p', '+']
+    legend = []
+
     for policy in policies:
-        new_data = data.loc[
-            data['method'] == policy['method']
-        ]
+        x = iterations
+        y = []
+        for iteration in iterations:
+            filename = '{}_{}_{}_iteration{}_C{}_D{}.csv'.format(
+                policy['simulation policy'], policy['expand policy'], policy['reward policy'], iteration, policy['C'],
+                policy['D']
+            )
+
+            filepath = os.path.join(
+                root_dir,
+                filename
+            )
+
+            data = pd.read_csv(filepath)
+
+            if y_name in ['node utilization']:
+                y.append(np.average(data[y_name]))
+            else:
+                y.append(list(data[y_name])[-1])
 
         plt.plot(
-            new_data[x_name],
-            new_data[y_name],
-            marker = markers[i]
+            x,
+            y,
+            marker=markers[marker_id]
         )
-        i += 1
-    plt.legend(['VNE-SPMCTS','MaVEn-S'])
+        marker_id += 1
+        legend.append(
+            '{}_{}_{}_C{}_D{}'.format(
+                policy['reward policy'], policy['simulation policy'], policy['expand policy'], policy['C'], policy['D']
+            )
+        )
 
-
+    plt.legend(legend)
     plt.grid(linestyle='--')
     # plt.savefig('../figures/zheng11.eps')
     plt.show()
 
 
-def main():
-    iteration = '75'
-    filepath1 = '../result/result8_26/random_LAHF_R-C_iteration'+iteration+'_C10000_D10000.csv'
-    filepath2 = '../result/result8_26/random_random_R-C_iteration'+iteration+'_C10000_D0.csv'
-    filepath3 = '../result/result8_26/VNE-UEPSO.csv'
+def plot_one_iteration(root_dir, policies):
+    plot_on_one_iteration(
+        root_dir=root_dir,
+        policies=policies,
+        y='node utilization'
+    )
 
-    plot_on_one_iteration(filepath1, filepath2, filepath3, y='node utilization')
-    plot_on_one_iteration(filepath1, filepath2, filepath3, y='acceptance ratio')
-    plot_on_one_iteration(filepath1, filepath2, filepath3, y='revenue cost ratio')
-    plot_on_one_iteration(filepath1, filepath2, filepath3, y='profitability')
+    plot_on_one_iteration(
+        root_dir=root_dir,
+        policies=policies,
+        y='acceptance ratio'
+    )
+    plot_on_one_iteration(
+        root_dir=root_dir,
+        policies=policies,
+        y='revenue cost ratio'
+    )
+    plot_on_one_iteration(
+        root_dir=root_dir,
+        policies=policies,
+        y='profitability'
+    )
 
-    policies = [
-        {'method':'VNE-SPMCTS'},
-        {'method':'MaVEn-S'}
-    ]
-    filepath = '../result/result8_26/result1-250-3.csv'
 
-
+def plot_different_iterations(root_dir, policies, iterations):
     plot_on_different_iterations(
         policies=policies,
-        filepath=filepath,
+        root_dir=root_dir,
+        iterations=iterations,
         x_name='number of iteration',
         y_name='acceptance ratio',
     )
     # #
     plot_on_different_iterations(
         policies=policies,
-        filepath=filepath,
+        root_dir=root_dir,
+        iterations=iterations,
         x_name='number of iteration',
         y_name='revenue cost ratio',
     )
     plot_on_different_iterations(
         policies=policies,
-        filepath=filepath,
+        root_dir=root_dir,
+        iterations=iterations,
         x_name='number of iteration',
         y_name='profitability',
     )
     plot_on_different_iterations(
         policies=policies,
-        filepath=filepath,
+        root_dir=root_dir,
+        iterations=iterations,
         x_name='number of iteration',
         y_name='node utilization',
     )
-    plot_on_different_iterations(
-        policies=policies,
-        filepath=filepath,
-        x_name='number of iteration',
-        y_name='link utilization',
+
+
+def main():
+    # filepath3 = '../result/result8_26/VNE-UEPSO.csv'
+
+    # TODO 1
+    policies = [
+        {'method':'MaVEn-S','reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'iteration': 5, 'C': 0.5,
+         'D': 0},
+        {'method':'MaVEn-S','method':'MaVEn-S','reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'iteration': 15, 'C': 0.5,
+         'D': 0},
+        {'method':'MaVEn-S','reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'iteration': 30, 'C': 0.5,
+         'D': 0},
+        {'method':'MaVEn-S','reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'iteration': 50, 'C': 0.5,
+         'D': 0},
+        {'method':'MaVEn-S','reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'iteration': 100, 'C': 0.5,
+         'D': 0},
+        {'method':'MaVEn-S','reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'iteration': 250, 'C': 0.5,
+         'D': 0},
+    ]
+
+    policies = [
+        {'method': 'MaVEn-S', 'reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random',
+         'iteration': 5, 'C': 0.5,
+         'D': 0},
+        {'method':'VNE-SPMCTS','reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU', 'iteration': 5, 'C': 0.5,
+         'D': 0},
+        {'method': 'MaVEn-S', 'reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random',
+         'iteration': 50, 'C': 0.5,
+         'D': 0},
+        {'method':'VNE-SPMCTS','reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU', 'iteration': 50, 'C': 0.5,
+         'D': 0},
+
+    ]
+
+    plot_one_iteration(
+        root_dir='../result/result8_26',
+        policies=policies
     )
 
+    # TODO 2
+    policies = [
+        {'method':'VNE-SPMCTS','reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU', 'C': 0.5, 'D': 0},
+        {'method':'MaVEn-S','reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'C': 0.5, 'D': 0},
+    ]
+
+    iterations = [5, 15, 30, 50, 100, 250]
+
+    plot_different_iterations(
+        root_dir='../result/result8_26',
+        policies=policies,
+        iterations=iterations
+    )
 
 
 if __name__ == '__main__':

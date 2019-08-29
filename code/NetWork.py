@@ -3,10 +3,11 @@ import copy
 
 INF = 999999999
 
+
 class Log:
-    def __init__(self, cpu_cost_list, edge_cost_list,cpu_cost,edge_cost,vn_id):
-        self.cpu_cost_list= cpu_cost_list
-        self.edge_cost_list =edge_cost_list
+    def __init__(self, cpu_cost_list, edge_cost_list, cpu_cost, edge_cost, vn_id):
+        self.cpu_cost_list = cpu_cost_list
+        self.edge_cost_list = edge_cost_list
         self.cpu_cost = cpu_cost
         self.edge_cost = edge_cost
         self.vn_id = vn_id
@@ -20,10 +21,11 @@ class Graph:
         self.edges = {}
         self.cpu_sources = 0
         self.edge_sources = 0
+        self.min_cpu_source = 999999
         self.edge_num = 0
         self.node_num = 0
         self.max_bandwidth = 0.0
-        self.max_edge_weight={}
+        self.max_edge_weight = {}
         self.life_time = 0
 
     def recover(self, log: Log):
@@ -42,18 +44,20 @@ class Graph:
             self.edge_sources += w
 
     def node_ranking(self):
-        nodes_resources = dict(map(lambda x: (x, self.nodes[x] + np.sum([self.edges[x][i] for i in self.edges[x]])), self.nodes.keys()))
+        nodes_resources = dict(
+            map(lambda x: (x, (1 + self.nodes[x]) * (1 + np.sum([self.edges[x][i] for i in self.edges[x]]))),
+                self.nodes.keys()))
         nodes_resources = dict(sorted(nodes_resources.items(), key=lambda d: d[1], reverse=True))
-        nodes_resources = dict(map(lambda x: (x,self.nodes[x]), nodes_resources.keys()))
+        nodes_resources = dict(map(lambda x: (x, self.nodes[x]), nodes_resources.keys()))
         self.nodes = nodes_resources
 
     # 计算nodes当前总量
     def sum_cpu_sources(self):
-        return np.sum(list(map(lambda x:x[1],self.nodes.items())))
+        return np.sum(list(map(lambda x: x[1], self.nodes.items())))
 
     # 计算edges当前总量
     def sum_edge_sources(self):
-        return np.sum(list(map(lambda x: np.sum(list(x.values())), self.edges.values())))/2
+        return np.sum(list(map(lambda x: np.sum(list(x.values())), self.edges.values()))) / 2
 
     # 最短路径
     def Dijkstra(self, from_node, to_node, bandwidth_needed):
@@ -116,9 +120,10 @@ class Graph:
     # 增加节点，并给节点赋值所需/所含的资源量
     def add_nodes(self, u, cpu_sources):
         self.nodes[u] = cpu_sources
+        self.min_cpu_source = min(self.min_cpu_source, cpu_sources)
         if u not in self.edges:
-            self.edges[u]={}
-        self.max_edge_weight[u]=0
+            self.edges[u] = {}
+        self.max_edge_weight[u] = 0
 
     # 增加链路
     def add_edges(self, u, v, w):
@@ -130,8 +135,9 @@ class Graph:
         if u not in self.max_edge_weight:
             self.max_edge_weight[u] = w
         else:
-            self.max_edge_weight[u]=max(w,self.max_edge_weight[u])
+            self.max_edge_weight[u] = max(w, self.max_edge_weight[u])
         self.edge_num += 1
+
     # 打印图，包括节点集合nodes与链路集合edges
 
     def print_graph(self):
@@ -142,7 +148,6 @@ class Graph:
         print(self.edges)
         print()
         # print("life time = {}".format(self.life_time))
-
 
 
 class NetWork:
@@ -172,7 +177,7 @@ class NetWork:
             if consumable:
                 self.SG.nodes[self.Mapping[i]] -= self.VG.nodes[i]
                 self.SG.cpu_sources -= self.VG.nodes[i]
-        return cpu_cost,cpu_cost_list
+        return cpu_cost, cpu_cost_list
 
     def bandwidth_cost(self, consumable):
         # TODO 1 : 将需要消耗的链路装入edges中，并按链路带宽从大到小排序，即优先消耗带宽消耗较大的链路（类比瓶子中先装大石子，再装小石子，再装水）
@@ -183,7 +188,7 @@ class NetWork:
                     continue
                 edge = (self.Mapping[u], self.Mapping[v], self.VG.edges[u][v])
                 edges.append(edge)
-        edges.sort(key=lambda item:item[2],reverse=True)
+        edges.sort(key=lambda item: item[2], reverse=True)
 
         # TODO 2 : 寻找物理网络上的最短路径（使跳数最少），并进行链路消耗
         reward = 0
@@ -195,10 +200,10 @@ class NetWork:
                 self.SG.recover(
                     Log(
                         edge_cost_list=edge_cost_lists,
-                        edge_cost = edge_cost,
-                        cpu_cost = 0,
-                        cpu_cost_list = [],
-                        vn_id = -1
+                        edge_cost=edge_cost,
+                        cpu_cost=0,
+                        cpu_cost_list=[],
+                        vn_id=-1
                     )
                 )
                 return None, None, None
@@ -206,7 +211,7 @@ class NetWork:
             self.SG.edges_consume(edge_cost_list)
             edge_cost_lists += edge_cost_list
             edge_cost += (dis * edge[2])
-            reward += (edge[2] / dis)
+            reward += (edge[2])
 
         if not consumable:
             self.SG.recover(
@@ -220,31 +225,19 @@ class NetWork:
             )
         return reward, edge_cost, edge_cost_lists
 
-    def evaluate_reward(self, consumable,reward_policy):
-        reward, edge_cost, edge_cost_list= self.bandwidth_cost(consumable)
-        if edge_cost == None or edge_cost_list == None:
-            return -INF
-
-        if reward == 0 or self.VG.max_bandwidth == 0:
-            return 0
-
-        if reward_policy == 'reward1':
-            return 20 * self.VG.edge_sources / edge_cost
-
-        if reward_policy == 'reward2':
-            left_cpu_sources = 0
-            for snode in list(self.Mapping.values()):
-                left_cpu_sources += self.SG.nodes[snode]
-            return 20 * self.VG.edge_sources / edge_cost + 2*left_cpu_sources/10000/self.VG.node_num
+    def evaluate_reward(self, consumable, reward_policy):
+        reward, edge_cost, edge_cost_list = self.bandwidth_cost(consumable)
 
         if reward_policy == 'R-C':
-            return self.VG.edge_sources-edge_cost
+            if reward == None:
+                return -INF
+            else:
+                return self.VG.edge_sources - edge_cost
 
-
-        if reward_policy == '(R-C)*CPU':
-            left_cpu_utilization = []
-            for snode in list(self.Mapping.values()):
-                left_cpu_utilization.append(self.SG.nodes[snode]/self.initial_SG.nodes[snode])
-            average_cpu_utilization = np.average(left_cpu_utilization)
-
-            return (self.VG.edge_sources-edge_cost) * ( 2 - average_cpu_utilization )
+        if reward_policy == 'RC':
+            if reward == None:
+                return 0.0
+            elif edge_cost == 0:
+                return 1.0
+            else:
+                return self.VG.edge_sources / edge_cost

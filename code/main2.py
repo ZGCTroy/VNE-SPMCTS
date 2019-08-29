@@ -46,17 +46,21 @@ def single_network_mapping(network: NetWork, iter_times, simulation_policy, expa
 
         root = Node(
             parent=None,
-            mapping=best_child.mapping,
+            mapping=copy.deepcopy(best_child.mapping),
             depth=best_child.depth
         )
 
     # TODO 3 : 导入映射方案，判断是否满足链路带宽需求
     best_mapping = root.mapping
-    if tree.Evaluate_Reward(best_mapping) == -INF:
+    if reward_policy == 'R-C' and tree.Evaluate_Reward(best_mapping) == -INF:
         return None, None
+    if reward_policy == 'RC' and tree.Evaluate_Reward(best_mapping) == 0:
+        return None, None
+
     # TODO 4 : 进行链路映射消耗
     network.load_mapping(best_mapping)
     reward, edge_cost, edge_cost_list = network.bandwidth_cost(consumable=True)
+
     # TODO 4 : 进行节点映射消耗
     cpu_cost, cpu_cost_list = network.cpu_consume(consumable=True)
 
@@ -264,7 +268,7 @@ def batch_requests(data, iter_times, simulation_policy, expand_policy, reward_po
 
     t = 0
     i = 0
-    left = 2000
+    left = 2000 *1
     total_request_num = 0
     for request in requests:
 
@@ -277,35 +281,35 @@ def batch_requests(data, iter_times, simulation_policy, expand_policy, reward_po
                 network.SG.recover(log)
 
         # 接纳
-
-        for request_id in request:
-            left -= 1;
-
-            network.VG = data.VGraphs[request_id]
-
-            if network.VG.cpu_sources == 1:
-                continue
-            else:
-                mapping, log = single_network_mapping(
-                    network=network,
-                    iter_times=iter_times,
-                    simulation_policy=simulation_policy,
-                    expand_policy=expand_policy,
-                    reward_policy=reward_policy,
-                    C=C,
-                    D=D
-                )
-
-                total_request_num += 1
-                if mapping:
-                    accept_num += 1
-                    alive += 1
-                    if t + network.VG.life_time not in logs:
-                        logs[t + network.VG.life_time] = [log]
-                    else:
-                        logs[t + network.VG.life_time].append(log)
-                    cost += log.edge_cost + log.cpu_cost
-                    revenue += (network.VG.edge_sources + network.VG.cpu_sources)
+        for i in range(1):
+            for request_id in request:
+                left -= 1
+    
+                network.VG = data.VGraphs[request_id]
+    
+                if network.VG.cpu_sources == 1:
+                    continue
+                else:
+                    mapping, log = single_network_mapping(
+                        network=network,
+                        iter_times=iter_times,
+                        simulation_policy=simulation_policy,
+                        expand_policy=expand_policy,
+                        reward_policy=reward_policy,
+                        C=C,
+                        D=D
+                    )
+    
+                    total_request_num += 1
+                    if mapping:
+                        accept_num += 1
+                        alive += 1
+                        if t + network.VG.life_time not in logs:
+                            logs[t + network.VG.life_time] = [log]
+                        else:
+                            logs[t + network.VG.life_time].append(log)
+                        cost += log.edge_cost + log.cpu_cost
+                        revenue += (network.VG.edge_sources + network.VG.cpu_sources)
 
         # 计算节点资源利用
         time_periods.append(t)
@@ -332,24 +336,29 @@ def batch_requests(data, iter_times, simulation_policy, expand_policy, reward_po
         print('profitability', profitability, '\n')
 
         t += 50
-        # network.SG.print_graph()
+        if t % 500 == 0:
+            result = pd.DataFrame(
+                data={
+                    'time periods': time_periods,
+                    'acceptance ratio': acceptance_ratios,
+                    'revenue cost ratio': revenue_cost_ratios,
+                    'node utilization': node_utilizations,
+                    'total utilization': total_utilizations,
+                    'link utilization': link_utilizations,
+                    'profitability': profitabilitys
+                }
+            )
+            result.to_csv(
+                '../result/result8_26/{}_{}_{}_iteration{}_C{}_D{}.csv'.format(simulation_policy, expand_policy,
+                                                                               reward_policy,
+                                                                               iter_times, C, D),
+                index=False
+            )
+        # if t == 3500:
+        #     break
 
-    result = pd.DataFrame(
-        data={
-            'time periods': time_periods,
-            'acceptance ratio': acceptance_ratios,
-            'revenue cost ratio': revenue_cost_ratios,
-            'node utilization': node_utilizations,
-            'total utilization': total_utilizations,
-            'link utilization': link_utilizations,
-            'profitability': profitabilitys
-        }
-    )
-    result.to_csv(
-        '../result/result8_26/{}_{}_{}_iteration{}_C{}_D{}.csv'.format(simulation_policy, expand_policy, reward_policy,
-                                                                iter_times, C, D),
-        index=False
-    )
+        network.SG.print_graph()
+
     return np.average(node_utilizations), np.average(
         link_utilizations), np.average(total_utilizations), revenue_cost_ratios[-1], acceptance_ratios[-1], \
            profitabilitys[-1]
@@ -384,9 +393,7 @@ def Floyd(data, is_print):
 
 def read_data(add_augment=False):
     data = Dataset(add_augment=add_augment)
-    data.read_SGraphs(
-        '../data/data8/maprecord.txt'
-    )
+    data.read_SGraphs('../data/data8/maprecord.txt')
     # data.get_random_SG()
 
     data.read_VGraphs(
@@ -400,7 +407,7 @@ def read_data(add_augment=False):
 
 def main():
     # TODO 1 : read data
-    origin_data = read_data()
+    origin_data = read_data(add_augment=True)
 
     # origin_data.SGraphs[0].print_graph()
     # origin_data.print_VGraphs()
@@ -412,27 +419,26 @@ def main():
     Floyd(origin_data, is_print=False)
 
     # TODO 3 : multi test
-    # reward_policies = ['R-C','(R-C)*CPU']
-    reward_policies = ['R-C']
     policies = [
-        # {'simulation policy': 'LAHF', 'expand policy': 'random', 'C': 10000, 'D': 10000,
-        #  'data': virtual_node_ranking_data},
-        # {'method': 'VNE-SPMCTS', 'simulation policy': 'random', 'expand policy': 'LAHF', 'C': 5000, 'D': 10000,
-        #  'data': virtual_node_ranking_data},
-        {'method': 'VNE-SPMCTS', 'simulation policy': 'random', 'expand policy': 'random', 'C': 1, 'D': 0,
-         'data': origin_data},
-        # {'method': 'MaVEn-S', 'simulation policy': 'random', 'expand policy': 'random', 'C': 1, 'D': 0,
-        #  'data': origin_data},
-    ]
+       #  {'method': 'VNE-SPMCTS', 'reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU',
+      #   'C': 0.5, 'D': 0,
+     #    'data': virtual_node_ranking_data},
 
-    # number_of_iteration = [5, 15, 30, 50, 75, 100, 250]
-    number_of_iteration = [30,75]
+        {'method': 'MaVEn-S', 'reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random',
+         'C': 0.5, 'D': 0,
+        'data': origin_data},
+
+    ]
+    # reward_policies = ['R-C','(R-C)*CPU']
+
+   # number_of_iteration = [5, 15, 30, 50, 100, 150, 250]
+    number_of_iteration = [5,15,30]
 
     result = {
         'method': [],
+        'reward policy': [],
         'C': [],
         'D': [],
-        'reward policy': [],
         'simulation policy': [],
         'expand policy': [],
         'number of iteration': [],
@@ -445,67 +451,70 @@ def main():
     }
 
     for iter_times in number_of_iteration:
-        for reward_policy in reward_policies:
-            for policy in policies:
-                average_node_utilization = []
-                average_rc = []
-                average_total_utilization = []
-                average_link_utilization = []
-                average_ac = []
-                average_profitability = []
 
-                print(
-                    'simulation policy = {},expand policy = {}, reward policy = {}, C = {}, D = {}, number of iterations = {}\n'.format(
-                        policy['simulation policy'],
-                        policy['expand policy'],
-                        reward_policy,
-                        policy['C'],
-                        policy['D'],
-                        iter_times
-                    )
+        for policy in policies:
+            average_node_utilization = []
+            average_rc = []
+            average_total_utilization = []
+            average_link_utilization = []
+            average_ac = []
+            average_profitability = []
+
+            print(
+                'simulation policy = {},expand policy = {}, reward policy = {}, C = {}, D = {}, number of iterations = {}\n'.format(
+                    policy['simulation policy'],
+                    policy['expand policy'],
+                    policy['reward policy'],
+                    policy['C'],
+                    policy['D'],
+                    iter_times
                 )
+            )
 
-                for i in range(1):
-                    node_utilization, link_utilization, total_utilization, rc, ac, profitability = batch_requests(
-                        data=policy['data'],
-                        iter_times=iter_times,
-                        simulation_policy=policy['simulation policy'],
-                        expand_policy=policy['expand policy'],
-                        reward_policy=reward_policy,
-                        C=policy['C'],
-                        D=policy['D']
-                    )
-                    average_node_utilization.append(node_utilization)
-                    average_link_utilization.append(link_utilization)
-                    average_total_utilization.append(total_utilization)
-                    average_rc.append(rc)
-                    average_ac.append(ac)
-                    average_profitability.append(profitability)
-
-                print('node utilization = ', np.average(average_node_utilization))
-                print('revenue cost ratio = ', np.average(average_rc))
-                print('average acceptance ratio', np.average(average_ac))
-                print('profitability', np.average(average_profitability), '\n\n')
-
-                result['method'].append(policy['method'])
-                result['C'].append(policy['C'])
-                result['D'].append(policy['D'])
-                result['number of iteration'].append(iter_times)
-                result['reward policy'].append(reward_policy)
-                result['simulation policy'].append(policy['simulation policy'])
-                result['expand policy'].append(policy['expand policy'])
-                result['node utilization'].append(np.average(average_node_utilization))
-                result['link utilization'].append(np.average(average_link_utilization))
-                result['total utilization'].append(np.average(average_total_utilization))
-                result['revenue cost ratio'].append(np.average(average_rc))
-                result['acceptance ratio'].append(np.average(average_ac))
-                result['profitability'].append(np.average(average_profitability))
-
-                csv_result = pd.DataFrame(
-                    data=result
+            for i in range(1):
+                node_utilization, link_utilization, total_utilization, rc, ac, profitability = batch_requests(
+                    data=policy['data'],
+                    iter_times=iter_times,
+                    simulation_policy=policy['simulation policy'],
+                    expand_policy=policy['expand policy'],
+                    reward_policy=policy['reward policy'],
+                    C=policy['C'],
+                    D=policy['D']
                 )
+                average_node_utilization.append(node_utilization)
+                average_link_utilization.append(link_utilization)
+                average_total_utilization.append(total_utilization)
+                average_rc.append(rc)
+                average_ac.append(ac)
+                average_profitability.append(profitability)
 
-                csv_result.to_csv('../result/result8_26/result1-250-3.csv', index=False)
+            print('node utilization = ', np.average(average_node_utilization))
+            print('revenue cost ratio = ', np.average(average_rc))
+            print('average acceptance ratio', np.average(average_ac))
+            print('profitability', np.average(average_profitability), '\n\n')
+
+            result['method'].append(policy['method'])
+            result['C'].append(policy['C'])
+            result['D'].append(policy['D'])
+            result['number of iteration'].append(iter_times)
+            result['reward policy'].append(policy['reward policy'])
+            result['simulation policy'].append(policy['simulation policy'])
+            result['expand policy'].append(policy['expand policy'])
+            result['node utilization'].append(np.average(average_node_utilization))
+            result['link utilization'].append(np.average(average_link_utilization))
+            result['total utilization'].append(np.average(average_total_utilization))
+            result['revenue cost ratio'].append(np.average(average_rc))
+            result['acceptance ratio'].append(np.average(average_ac))
+            result['profitability'].append(np.average(average_profitability))
+
+            csv_result = pd.DataFrame(
+                data=result
+            )
+
+            # csv_result.to_csv('../result/result8_26/{}_{}_C{}_D{}.csv'.format(
+            #    policy['simulation policy'], policy['expand policy'], policy['C'],policy['D']),
+            #    index=False
+            # )
 
 
 if __name__ == '__main__':

@@ -79,13 +79,13 @@ class Dataset:
         for u in range(1, 65):
             SG.add_nodes(
                 u,
-                np.random.uniform(10000, 20000)
+                10000
             )
             SG.add_edges(u, u, 0)
             for v in range(u + 1, 65):
                 prob = np.random.random()
                 if prob < 0.1:
-                    w = np.random.uniform(3000, 5000)
+                    w = 10000
                     SG.add_edges(u, v, int(w))
                     SG.add_edges(v, u, int(w))
 
@@ -133,6 +133,10 @@ class Dataset:
                 life_time = 0
                 if re.match(pattern4, line):
                     life_time = int(re.findall(pattern4, line)[0])
+                   # if life_time > 50:
+
+                    #    life_time = (life_time //50) // 2 * 50
+
                     line = f.readline()
 
                 VG.id = id
@@ -194,7 +198,6 @@ class Dataset:
             }
         )
 
-        print(result)
         result.to_csv(
             '../result/result8_26/VNE-UEPSO.csv',
             index=False
