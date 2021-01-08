@@ -35,7 +35,11 @@ def plot_on_one_iteration(root_dir, policies, y_name, y_lim=None, y_label=None):
     plt.rc('font', family='Times New Roman', size=13)
     plt.grid(linestyle='--')
     plt.ylabel(y_label)
+<<<<<<< HEAD
     plt.xlabel('number of time periods')
+=======
+    plt.xlabel('time periods')
+>>>>>>> c35e84939aad4627bf509d89c8250b72acc224e1
 
     marker_id = 0
     for policy in policies:
@@ -152,7 +156,11 @@ def plot_one_iteration(root_dir, policies):
         root_dir=root_dir,
         policies=policies,
         y_name='node utilization',
+<<<<<<< HEAD
         y_label='average physical node utilization ratio',
+=======
+        y_label='Average Physical Node Utilization Ratio',
+>>>>>>> c35e84939aad4627bf509d89c8250b72acc224e1
         y_lim=(0.0, 0.75)
     )
 
@@ -160,14 +168,22 @@ def plot_one_iteration(root_dir, policies):
         root_dir=root_dir,
         policies=policies,
         y_name='acceptance ratio',
+<<<<<<< HEAD
         y_label='acceptance ratio',
+=======
+        y_label='Acceptance Ratio',
+>>>>>>> c35e84939aad4627bf509d89c8250b72acc224e1
         y_lim=(0.4, 1.05)
     )
     plot_on_one_iteration(
         root_dir=root_dir,
         policies=policies,
         y_name='revenue cost ratio',
+<<<<<<< HEAD
         y_label='long-term revenue-to-cost ratio',
+=======
+        y_label='Long-term Revenue to Cost Ratio',
+>>>>>>> c35e84939aad4627bf509d89c8250b72acc224e1
         y_lim=(0.4, 0.9)
     )
     # plot_on_one_iteration(
@@ -306,7 +322,11 @@ def bar_different_iterations(root_dir, policies, iterations):
         policies=policies,
         iterations=iterations,
         y_name='acceptance ratio',
+<<<<<<< HEAD
         y_label='acceptance ratio',
+=======
+        y_label='Acceptance Ratio',
+>>>>>>> c35e84939aad4627bf509d89c8250b72acc224e1
         y_lim=(0.4, 0.9)
     )
     bar_on_different_iterations(
@@ -314,7 +334,11 @@ def bar_different_iterations(root_dir, policies, iterations):
         policies=policies,
         iterations=iterations,
         y_name='revenue cost ratio',
+<<<<<<< HEAD
         y_label='revenue-to-cost ratio',
+=======
+        y_label='Revenue to Cost Ratio',
+>>>>>>> c35e84939aad4627bf509d89c8250b72acc224e1
         y_lim=(0.5, 0.9)
     )
 
@@ -323,7 +347,11 @@ def bar_different_iterations(root_dir, policies, iterations):
         policies=policies,
         iterations=iterations,
         y_name='node utilization',
+<<<<<<< HEAD
         y_label='average physical node utilization ratio',
+=======
+        y_label='Average Physical Node Utilization Ratio',
+>>>>>>> c35e84939aad4627bf509d89c8250b72acc224e1
         y_lim=(0.2, 0.6)
     )
 
@@ -342,10 +370,10 @@ def main():
          'D': 0},
     ]
 
-    plot_one_iteration(
-        root_dir='../result/result8_26',
-        policies=policies
-    )
+    # plot_one_iteration(
+    #     root_dir='../result/result8_26',
+    #     policies=policies
+    # )
 
     # TODO 2
     policies = [
