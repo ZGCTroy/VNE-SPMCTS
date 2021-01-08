@@ -1,0 +1,2 @@
+C,D,number of iteration,reward policy,simulation policy,expand policy,cpu utilization,revenue cost ratio,cpu std
+2000,0,250,R-C,random,random,0.9159176084302255,0.4980761680408324,0.32511091840544076

@@ -342,7 +342,7 @@ class MonteCarloTree:
         while not self.check_whether_node_is_terminal(node):
             node.untried_actions = self.get_legal_untried_actions(node)
             if node.untried_actions == []:
-                print('sb')
+                # print('sb')
                 return -INF
             choosed_action = self.RollOut(node, policy=self.simulation_policy)
             node = self.Move(node, choosed_action)

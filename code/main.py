@@ -105,14 +105,14 @@ def receive_sequential_requests(data, iter_times, simulation_policy,expand_polic
         ask_num = 0
         dead = 0
         if t == 0:
-            ask_num = 20
+            ask_num = 250
         else:
             if t in logs:
                 dead = len(logs[t])
                 alive -= dead
                 for log in logs[t]:
                     network.SG.recover(log)
-                ask_num = 1 + dead * 3
+                ask_num = (1 + dead) * 5
 
         #print(t, 'alive = ', alive, 'left = ', len(requests),'dead = ',dead,'ask_num = ',ask_num)
 
@@ -120,7 +120,8 @@ def receive_sequential_requests(data, iter_times, simulation_policy,expand_polic
         # 接纳
         failed_requests = []
         #print('time = ',t)
-        while len(requests) > 0 and continuous_failed_num > 0:
+        while len(requests) > 0 and ask_num>0:
+            ask_num -= 1
             total_request_num += 1
             request_id = requests.pop(0)  # 队首出队
 
@@ -139,8 +140,6 @@ def receive_sequential_requests(data, iter_times, simulation_policy,expand_polic
                 continuous_failed_num -= 1
                 failed_requests.append(request_id)
             else:
-
-                continuous_failed_num = ask_num
                 successful_request_num += 1
                 alive += 1
                 if t + network.VG.life_time not in logs:
@@ -194,7 +193,6 @@ def receive_sequential_requests(data, iter_times, simulation_policy,expand_polic
             break
 
 
-    print('Running time = ', time.clock() - start_time)
     print('Final t = ',t)
     print('Average Acceptance Ratio = ', np.average(acceptance_ratios))
     print('Average CPU cpu_utilization = ', np.average(cpu_utilizations))
@@ -212,10 +210,10 @@ def receive_sequential_requests(data, iter_times, simulation_policy,expand_polic
         columns=['time periods', 'cpu utilization', 'revenue cost ratio', 'total utilization', 'acceptance ratio']
     )
     result.to_csv(
-         '../result8_20/{}_{}_{}_iteration{}_C{}_D{}.csv'.format(simulation_policy,expand_policy,reward_policy, iter_times, C, D),
+         '../result/result1_16/{}_{}_{}_iteration{}_C{}_D{}.csv'.format(simulation_policy,expand_policy,reward_policy, iter_times, C, D),
         index=False
     )
-    return np.average(cpu_utilizations), revenue_cost_ratios[-1], np.average(cpu_stds), time.clock() - start_time
+    return np.average(cpu_utilizations), revenue_cost_ratios[-1], np.average(cpu_stds)
 
 
 def Floyd(data, is_print):
@@ -247,10 +245,10 @@ def Floyd(data, is_print):
 def read_data():
     data = Dataset()
     data.read_SGraphs(
-        '../data/data7/maprecord.txt'
+        '../data/data_500/maprecord.txt'
     )
     data.read_VGraphs(
-        '../data/data7/virtualnetworkTP.txt'
+        '../data/data_500/virtualnetworkTP.txt'
     )
     return data
 
@@ -269,10 +267,10 @@ def main():
     reward_policies = ['R-C']
     policies = [
         {'simulation policy': 'random', 'expand policy': 'random', 'C': 2000, 'D': 0,'data': origin_data},
-        {'simulation policy': 'LAHF', 'expand policy': 'HCPUF', 'C': 2000, 'D': 2000,'data': virtual_node_ranking_data},
+        # {'simulation policy': 'LAHF', 'expand policy': 'HCPUF', 'C': 2000, 'D': 2000,'data': virtual_node_ranking_data},
     ]
     # number_of_iteration = [i for i in range(1,50,3)]
-    number_of_iteration = [16]
+    number_of_iteration = [250]
     result = {
         'C': [],
         'D': [],
@@ -301,8 +299,8 @@ def main():
                     )
                 )
 
-                for i in range(3):
-                    ut, rc, std, _ = receive_sequential_requests(
+                for i in range(1):
+                    ut, rc, std = receive_sequential_requests(
                         data=policy['data'],
                         iter_times=iter_times,
                         simulation_policy=policy['simulation policy'],
@@ -336,7 +334,7 @@ def main():
                  'revenue cost ratio', 'cpu std']
     )
 
-    result.to_csv('../result8_20/result1-250-3.csv',index=False)
+    result.to_csv('../result/result1_16/result1-250-3.csv',index=False)
 
 
 if __name__ == '__main__':

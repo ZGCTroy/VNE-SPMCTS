@@ -27,15 +27,15 @@ def plot(x, y, filepath, legend, marker, interval=50):
     )
 
 
-def plot_on_one_iteration(root_dir, policies, y_name, y_lim=None):
+def plot_on_one_iteration(root_dir, policies, y_name, y_lim=None, y_label=None):
     markers = ['^', '.', 'p', '+', 'o', '*']
 
-    plt.figure(dpi=900)
+    plt.figure(dpi=1200)
     plt.style.use("seaborn-muted")
     plt.rc('font', family='Times New Roman', size=13)
     plt.grid(linestyle='--')
-    plt.ylabel(y_name)
-    plt.xlabel('time periods')
+    plt.ylabel(y_label)
+    plt.xlabel('number of time periods')
 
     marker_id = 0
     for policy in policies:
@@ -53,7 +53,7 @@ def plot_on_one_iteration(root_dir, policies, y_name, y_lim=None):
             filepath=filepath,
             legend=policy['method'],
             marker=markers[marker_id],
-            interval=1000
+            interval=500
         )
         marker_id += 1
 
@@ -63,7 +63,7 @@ def plot_on_one_iteration(root_dir, policies, y_name, y_lim=None):
         filepath=os.path.join(root_dir, 'VNE-UEPSO.csv'),
         legend='VNE-UEPSO',
         marker=markers[marker_id],
-        interval=1000
+        interval=500
     )
 
     if y_lim:
@@ -74,18 +74,17 @@ def plot_on_one_iteration(root_dir, policies, y_name, y_lim=None):
     # plt.xlim(0,20000,5000)
     plt.xticks(np.arange(0,25000,5000))
     if y_name == 'node utilization':
-        filename = 'node_utilization'
+        filename = 'zheng8.eps'
     if y_name == 'acceptance ratio':
-        filename = 'acceptance_ratio'
+        filename = 'zheng9.eps'
     if y_name == 'profitability':
         filename = 'profitability'
     if y_name == 'revenue cost ratio':
-        filename = 'revenue_cost_ratio'
+        filename = 'zheng10.eps'
 
-    plt.savefig('../figures/' + filename + '_one_iteration.eps')
+    plt.savefig('../figures/' + filename)
 
-    # plt.savefig('../figures/zheng9.eps')
-    plt.show()
+    # plt.show()
 
 
 def plot_on_different_iterations(root_dir, policies, iterations, y_name):
@@ -153,6 +152,7 @@ def plot_one_iteration(root_dir, policies):
         root_dir=root_dir,
         policies=policies,
         y_name='node utilization',
+        y_label='average physical node utilization ratio',
         y_lim=(0.0, 0.75)
     )
 
@@ -160,12 +160,14 @@ def plot_one_iteration(root_dir, policies):
         root_dir=root_dir,
         policies=policies,
         y_name='acceptance ratio',
+        y_label='acceptance ratio',
         y_lim=(0.4, 1.05)
     )
     plot_on_one_iteration(
         root_dir=root_dir,
         policies=policies,
         y_name='revenue cost ratio',
+        y_label='long-term revenue-to-cost ratio',
         y_lim=(0.4, 0.9)
     )
     # plot_on_one_iteration(
@@ -208,16 +210,16 @@ def plot_different_iterations(root_dir, policies, iterations):
 
 
 def bar_on_different_iterations(root_dir, policies, iterations, y_name, y_label=None, y_lim=None):
-    plt.figure(dpi=900)
+    plt.figure(dpi=1200)
     plt.style.use("seaborn-muted")
 
     # plt.rc('font', family='Times New Roman', size=13)
     plt.xlabel('number of iterations')
 
     if y_label:
-        plt.ylabel(y_name)
+        plt.ylabel(y_label)
     else:
-        plt.ylabel(y_name)
+        plt.ylabel(y_label)
 
     legend = []
 
@@ -252,44 +254,50 @@ def bar_on_different_iterations(root_dir, policies, iterations, y_name, y_label=
         y = list(data[y_name])[-1]
     total_y.append([y for i in iterations])
 
-    width = 0.2
+    width = 0.25
+
+    # plt.bar(
+    #     [j - width for j in range(len(iterations))],
+    #     total_y[2],
+    #     width=width,
+    # )
 
     plt.bar(
         [j - width for j in range(len(iterations))],
-        total_y[2],
-        width=width,
-    )
-
-    plt.bar(
-        [j for j in range(len(iterations))],
         total_y[0],
         width=width,
-        tick_label=['5', '15', '30', '50', '100', '250']
+        tick_label=['     5', '     15', '     30', '     50', '     100', '     250'],
     )
+    # plt.bar(
+    #     [j for j in range(len(iterations))],
+    #     [0 for j in range(len(iterations))],
+    #     width=0,
+    #     tick_label=['5', '15', '30', '50', '100', '250'],
+    # )
 
     plt.bar(
-        [j + width for j in range(len(iterations))],
+        [j  for j in range(len(iterations))],
         total_y[1],
-        width=width
+        width=width,
     )
 
     plt.grid(linestyle='--', axis='y')
+    plt.legend(['MaVEn-S','VNE-SPMCTS'])
 
-    plt.legend(['VNE-UPESO', 'MaVEn-S', 'VNE-NRMCTS'])
     if y_lim:
         plt.ylim(y_lim)
 
     filename = ''
     if y_name == 'node utilization':
-        filename = 'node_utilization'
+        filename = 'zheng11.eps'
     if y_name == 'acceptance ratio':
-        filename = 'acceptance_ratio'
+        filename = 'zheng12.eps'
     if y_name == 'profitability':
         filename = 'profitability'
     if y_name == 'revenue cost ratio':
-        filename = 'revenue_cost_ratio'
-    plt.savefig('../figures/' + filename + '_iterations.eps')
-    plt.show()
+        filename = 'zheng13.eps'
+    plt.savefig('../figures/' + filename)
+    # plt.show()
 
 
 def bar_different_iterations(root_dir, policies, iterations):
@@ -298,14 +306,16 @@ def bar_different_iterations(root_dir, policies, iterations):
         policies=policies,
         iterations=iterations,
         y_name='acceptance ratio',
-        y_lim=(0.3, 1.0)
+        y_label='acceptance ratio',
+        y_lim=(0.4, 0.9)
     )
     bar_on_different_iterations(
         root_dir=root_dir,
         policies=policies,
         iterations=iterations,
         y_name='revenue cost ratio',
-        y_lim=(0.3, 1.0)
+        y_label='revenue-to-cost ratio',
+        y_lim=(0.5, 0.9)
     )
 
     bar_on_different_iterations(
@@ -313,7 +323,8 @@ def bar_different_iterations(root_dir, policies, iterations):
         policies=policies,
         iterations=iterations,
         y_name='node utilization',
-        y_lim=(0.1, 0.7)
+        y_label='average physical node utilization ratio',
+        y_lim=(0.2, 0.6)
     )
 
 
@@ -326,7 +337,7 @@ def main():
         {'method': 'MaVEn-S', 'reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random',
          'iteration': 15, 'C': 0.5,
          'D': 0},
-        {'method': 'VNE-NRMCTS', 'reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU',
+        {'method': 'VNE-SPMCTS', 'reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU',
          'iteration': 15, 'C': 0.5,
          'D': 0},
     ]
@@ -340,7 +351,7 @@ def main():
     policies = [
         {'method': 'MaVEn-S', 'reward policy': 'RC', 'simulation policy': 'random', 'expand policy': 'random', 'C': 0.5,
          'D': 0},
-        {'method': 'VNE-NRMCTS', 'reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU',
+        {'method': 'VNE-SPMCTS', 'reward policy': 'RC', 'simulation policy': 'DBCPU', 'expand policy': 'DBCPU',
          'C': 0.5, 'D': 0},
     ]
 
